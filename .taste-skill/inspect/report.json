@@ -1,28 +1,30 @@
 {
  "url": "http://localhost:8080",
- "at": "2026-10-24T12:32:23.528Z",
+ "at": "2026-10-24T12:54:43.182Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 10,
+   "screens": 12,
    "filled": [
     0.41,
-    0.58,
+    0.61,
+    0.44,
+    0.75,
+    0.7,
+    0.52,
+    0.49,
+    0.55,
+    0.5,
     0.56,
-    0.65,
-    0.56,
-    0.62,
-    0.54,
-    0.59,
-    0.58,
+    0.47,
     0.44
    ],
    "motion": {
-    "elements": 34,
-    "css": 28,
+    "elements": 42,
+    "css": 36,
     "transitions": 6,
     "scripted": 0,
     "videos": 0,
@@ -34,14 +36,14 @@
      "h": 900
     },
     "page": {
-     "height": 8966,
-     "screens": 10,
-     "words": 1299,
-     "img": 5,
+     "height": 11414,
+     "screens": 12.7,
+     "words": 1647,
+     "img": 4,
      "video": 0,
      "canvas": 0,
-     "svg": 16,
-     "sections": 8,
+     "svg": 27,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -50,10 +52,10 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "national-assembly-of-bangladesh-06.jpg",
       "bd_epaper_banner.png",
       "bd_epaper_preview.png",
-      "nutrition_figure.png",
-      "national-assembly-of-bangladesh-06.jpg"
+      "nutrition_figure.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -133,9 +135,9 @@
       "kind": "heading"
      },
      {
-      "text": "1,000+",
+      "text": "7+",
       "words": 1,
-      "chars": 6,
+      "chars": 2,
       "lines": 1,
       "size": 38.4,
       "vw": 2.7,
@@ -154,9 +156,9 @@
       "kind": "heading"
      },
      {
-      "text": "1",
+      "text": "1,000+",
       "words": 1,
-      "chars": 1,
+      "chars": 6,
       "lines": 1,
       "size": 38.4,
       "vw": 2.7,
@@ -212,7 +214,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 1001,
+      "top": 978,
       "tag": "h2",
       "kind": "heading"
      },
@@ -233,7 +235,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 2064,
+      "top": 2042,
       "tag": "h2",
       "kind": "heading"
      },
@@ -254,7 +256,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 4342,
+      "top": 5641,
       "tag": "h2",
       "kind": "heading"
      },
@@ -275,7 +277,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 5286,
+      "top": 6585,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Public Discourse, Media & Perspectives",
+      "words": 5,
+      "chars": 38,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 7356,
       "tag": "h2",
       "kind": "heading"
      },
@@ -296,7 +319,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 6057,
+      "top": 8485,
       "tag": "h2",
       "kind": "heading"
      },
@@ -317,7 +340,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 6901,
+      "top": 9376,
       "tag": "h2",
       "kind": "heading"
      },
@@ -338,18 +361,18 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.18,
-      "top": 8336,
+      "top": 10785,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 12,
+     "count": 13,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
      "centered": 1,
-     "medianWords": 4,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -376,7 +399,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 13.1
+      "contrast": 13.2
      },
      "measureChars": 55,
      "max": {
@@ -393,32 +416,32 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#070d15",
+     "bodyBg": "#070c14",
      "bodyBgHsl": {
-      "h": 214,
-      "s": 0.5,
+      "h": 217,
+      "s": 0.48,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#111b29",
-       "top": 1154,
+       "color": "#101b28",
+       "top": 1132,
        "hsl": {
-        "h": 215,
-        "s": 0.41,
+        "h": 213,
+        "s": 0.43,
         "l": 0.11
        }
       },
       {
        "color": "#0f1422",
-       "top": 8272,
+       "top": 10721,
        "hsl": {
         "h": 224,
         "s": 0.39,
@@ -429,41 +452,41 @@
      "textColors": [
       {
        "color": "#e3e9f0",
-       "share": 0.45
+       "share": 0.46
       },
       {
-       "color": "#cad5e0",
-       "share": 0.3
+       "color": "#cbd5e1",
+       "share": 0.27
       },
       {
-       "color": "#fefeff",
-       "share": 0.18
+       "color": "#ffffff",
+       "share": 0.19
       },
       {
-       "color": "#60a5fa",
+       "color": "#60a4fb",
        "share": 0.05
       },
       {
-       "color": "#95a2b8",
+       "color": "#94a3b8",
        "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172033",
+      "bg": "#1f41af",
       "hsl": {
-       "h": 221,
-       "s": 0.38,
-       "l": 0.15
+       "h": 226,
+       "s": 0.7,
+       "l": 0.4
       },
-      "fg": "#fefeff"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 21,
+     "count": 32,
      "inHero": 5,
      "radius": 6,
-     "height": 31,
+     "height": 39,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -489,10 +512,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 23,
+     "roundedBoxes": 32,
      "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 5,
+     "roundedMedia": 4,
      "mediaRadius": 14,
      "textShadow": 0,
      "cardRows": [
@@ -500,13 +523,13 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 6211
+       "top": 8638
       }
      ]
     },
     "heroMedia": [],
     "nav": {
-     "links": 11,
+     "links": 12,
      "fixed": false,
      "height": 72,
      "floatingPill": false,
@@ -521,18 +544,18 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8966,
+    "pageH": 11414,
     "margins": {
      "left": 172,
-     "right": 210
+     "right": 212
     },
     "sections": [
      {
       "sel": "section#hero.hero-section",
       "tag": "section",
       "top": 0,
-      "height": 929,
-      "words": 111,
+      "height": 906,
+      "words": 108,
       "media": 0,
       "middle": 3,
       "heading": {
@@ -553,9 +576,9 @@
      {
       "sel": "section#about.section.about-section",
       "tag": "section",
-      "top": 929,
+      "top": 906,
       "height": 1064,
-      "words": 287,
+      "words": 266,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -564,9 +587,9 @@
        "tag": "h2"
       },
       "left": 172,
-      "right": 215,
+      "right": 211,
       "textLeft": 172,
-      "textRight": 215,
+      "textRight": 211,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -576,10 +599,10 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 1992,
-      "height": 2278,
-      "words": 428,
-      "media": 5,
+      "top": 1970,
+      "height": 3599,
+      "words": 639,
+      "media": 4,
       "middle": 0,
       "heading": {
        "text": "Selected Projects & Research Initiatives",
@@ -587,7 +610,7 @@
        "tag": "h2"
       },
       "left": 172,
-      "right": 172,
+      "right": 204,
       "textLeft": 172,
       "textRight": 204,
       "fullBleed": false,
@@ -599,7 +622,7 @@
      {
       "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 4270,
+      "top": 5569,
       "height": 945,
       "words": 143,
       "media": 0,
@@ -622,7 +645,7 @@
      {
       "sel": "section#teaching.section.teaching-section",
       "tag": "section",
-      "top": 5214,
+      "top": 6513,
       "height": 771,
       "words": 137,
       "media": 0,
@@ -643,11 +666,34 @@
       "pinned": false
      },
      {
+      "sel": "section#media.section.media-section",
+      "tag": "section",
+      "top": 7284,
+      "height": 1129,
+      "words": 188,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Public Discourse, Media & Perspectives",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 215,
+      "textLeft": 172,
+      "textRight": 215,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#toolkit.section.toolkit-section",
       "tag": "section",
-      "top": 5985,
-      "height": 844,
-      "words": 101,
+      "top": 8413,
+      "height": 891,
+      "words": 108,
       "media": 0,
       "middle": 119,
       "heading": {
@@ -668,9 +714,9 @@
      {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 6829,
-      "height": 1364,
-      "words": 220,
+      "top": 9304,
+      "height": 1337,
+      "words": 206,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -691,20 +737,20 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 8192,
+      "top": 10641,
       "height": 590,
-      "words": 41,
+      "words": 46,
       "media": 0,
-      "middle": 0,
+      "middle": 63,
       "heading": {
        "text": "Let's Connect.",
        "size": 38,
        "tag": "h2"
       },
-      "left": 417,
-      "right": 408,
-      "textLeft": 417,
-      "textRight": 408,
+      "left": 306,
+      "right": 282,
+      "textLeft": 306,
+      "textRight": 282,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -714,7 +760,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 8783,
+      "top": 11231,
       "height": 183,
       "words": 30,
       "media": 0,
@@ -744,11 +790,11 @@
     "edges": [
      {
       "x": 202,
-      "n": 21
+      "n": 25
      },
      {
       "x": 172,
-      "n": 15
+      "n": 17
      },
      {
       "x": 774,
@@ -756,14 +802,22 @@
      },
      {
       "x": 579,
-      "n": 5
+      "n": 7
      },
      {
       "x": 953,
-      "n": 5
+      "n": 7
+     },
+     {
+      "x": 268,
+      "n": 3
+     },
+     {
+      "x": 816,
+      "n": 2
      }
     ],
-    "leftBlocks": 55,
+    "leftBlocks": 70,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -787,21 +841,21 @@
    "filled": [
     0.71,
     0.83,
-    0.65,
+    0.61,
+    0.79,
+    0.79,
+    0.86,
     0.92,
-    0.86,
-    0.86,
-    0.73,
-    0.68,
-    0.68,
-    0.55,
-    0.73,
-    0.65
+    0.79,
+    0.83,
+    0.75,
+    0.61,
+    0.73
    ],
    "motion": {
-    "elements": 34,
-    "css": 28,
-    "transitions": 6,
+    "elements": 41,
+    "css": 36,
+    "transitions": 5,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -812,14 +866,14 @@
      "h": 1024
     },
     "page": {
-     "height": 12342,
-     "screens": 12.1,
-     "words": 1298,
-     "img": 5,
+     "height": 15670,
+     "screens": 15.3,
+     "words": 1646,
+     "img": 4,
      "video": 0,
      "canvas": 0,
-     "svg": 16,
-     "sections": 8,
+     "svg": 27,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -828,10 +882,10 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "national-assembly-of-bangladesh-06.jpg",
       "bd_epaper_banner.png",
       "bd_epaper_preview.png",
-      "nutrition_figure.png",
-      "national-assembly-of-bangladesh-06.jpg"
+      "nutrition_figure.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -923,7 +977,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 13.1
+      "contrast": 13.2
      },
      "measureChars": 79,
      "max": {
@@ -940,41 +994,41 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#070d15",
+     "bodyBg": "#070c14",
      "bodyBgHsl": {
-      "h": 214,
-      "s": 0.5,
+      "h": 217,
+      "s": 0.48,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#172033",
-       "top": -349,
+       "color": "#162133",
+       "top": -403,
        "hsl": {
-        "h": 221,
-        "s": 0.38,
-        "l": 0.15
+        "h": 217,
+        "s": 0.4,
+        "l": 0.14
        }
       },
       {
-       "color": "#111b29",
+       "color": "#101b28",
        "top": 1175,
        "hsl": {
-        "h": 215,
-        "s": 0.41,
+        "h": 213,
+        "s": 0.43,
         "l": 0.11
        }
       },
       {
        "color": "#0f1422",
-       "top": 11675,
+       "top": 14942,
        "hsl": {
         "h": 224,
         "s": 0.39,
@@ -985,41 +1039,41 @@
      "textColors": [
       {
        "color": "#e3e9f0",
-       "share": 0.45
+       "share": 0.47
       },
       {
-       "color": "#cad5e0",
-       "share": 0.3
+       "color": "#cbd5e1",
+       "share": 0.27
       },
       {
-       "color": "#fefeff",
-       "share": 0.18
+       "color": "#ffffff",
+       "share": 0.19
       },
       {
-       "color": "#60a5fa",
+       "color": "#60a4fb",
        "share": 0.05
       },
       {
-       "color": "#95a2b8",
+       "color": "#94a3b8",
        "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172033",
+      "bg": "#1f41af",
       "hsl": {
-       "h": 221,
-       "s": 0.38,
-       "l": 0.15
+       "h": 226,
+       "s": 0.7,
+       "l": 0.4
       },
-      "fg": "#fefeff"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 20,
+     "count": 31,
      "inHero": 4,
      "radius": 6,
-     "height": 31,
+     "height": 39,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1044,10 +1098,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 23,
+     "roundedBoxes": 32,
      "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 5,
+     "roundedMedia": 4,
      "mediaRadius": 14,
      "textShadow": 0,
      "cardRows": [
@@ -1055,13 +1109,13 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 9034
+       "top": 12276
       }
      ]
     },
     "heroMedia": [],
     "nav": {
-     "links": 9,
+     "links": 10,
      "fixed": false,
      "height": 64,
      "floatingPill": false,
@@ -1076,10 +1130,10 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 12342,
+    "pageH": 15670,
     "margins": {
      "left": 20,
-     "right": 20
+     "right": 32
     },
     "sections": [
      {
@@ -1087,7 +1141,7 @@
       "tag": "section",
       "top": 0,
       "height": 966,
-      "words": 111,
+      "words": 108,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1109,8 +1163,8 @@
       "sel": "section#about.section.about-section",
       "tag": "section",
       "top": 966,
-      "height": 1504,
-      "words": 287,
+      "height": 1478,
+      "words": 266,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1131,10 +1185,10 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 2470,
-      "height": 4057,
-      "words": 428,
-      "media": 5,
+      "top": 2444,
+      "height": 5698,
+      "words": 639,
+      "media": 4,
       "middle": 0,
       "heading": {
        "text": "Selected Projects & Research Initiatives",
@@ -1144,7 +1198,7 @@
       "left": 20,
       "right": 20,
       "textLeft": 20,
-      "textRight": 46,
+      "textRight": 32,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1154,7 +1208,7 @@
      {
       "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 6527,
+      "top": 8142,
       "height": 1224,
       "words": 143,
       "media": 0,
@@ -1177,7 +1231,7 @@
      {
       "sel": "section#teaching.section.teaching-section",
       "tag": "section",
-      "top": 7751,
+      "top": 9366,
       "height": 1074,
       "words": 137,
       "media": 0,
@@ -1198,11 +1252,34 @@
       "pinned": false
      },
      {
+      "sel": "section#media.section.media-section",
+      "tag": "section",
+      "top": 10440,
+      "height": 1627,
+      "words": 188,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Public Discourse, Media & Perspectives",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 57,
+      "textLeft": 20,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#toolkit.section.toolkit-section",
       "tag": "section",
-      "top": 8826,
-      "height": 1395,
-      "words": 101,
+      "top": 12067,
+      "height": 1448,
+      "words": 108,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1223,9 +1300,9 @@
      {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 10221,
-      "height": 1374,
-      "words": 220,
+      "top": 13515,
+      "height": 1347,
+      "words": 206,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1246,9 +1323,9 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 11595,
-      "height": 522,
-      "words": 41,
+      "top": 14862,
+      "height": 582,
+      "words": 46,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1256,10 +1333,10 @@
        "size": 25,
        "tag": "h2"
       },
-      "left": 81,
-      "right": 72,
-      "textLeft": 81,
-      "textRight": 72,
+      "left": 78,
+      "right": 78,
+      "textLeft": 78,
+      "textRight": 78,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1269,7 +1346,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 12117,
+      "top": 15444,
       "height": 226,
       "words": 30,
       "media": 0,
@@ -1298,12 +1375,20 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 50,
-      "n": 38
+      "x": 52,
+      "n": 36
      },
      {
       "x": 20,
-      "n": 15
+      "n": 17
+     },
+     {
+      "x": 40,
+      "n": 14
+     },
+     {
+      "x": 98,
+      "n": 1
      },
      {
       "x": 121,
@@ -1314,7 +1399,7 @@
       "n": 1
      }
     ],
-    "leftBlocks": 55,
+    "leftBlocks": 70,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -1332,21 +1417,21 @@
    "screens": 12,
    "filled": [
     0.67,
-    0.68,
+    0.66,
     0.92,
-    0.92,
+    0.86,
     0.63,
-    0.67,
+    0.84,
     0.92,
+    0.86,
+    0.86,
     0.92,
-    0.92,
-    0.92,
-    0.92,
-    0.73
+    0.86,
+    0.86
    ],
    "motion": {
-    "elements": 30,
-    "css": 28,
+    "elements": 38,
+    "css": 36,
     "transitions": 2,
     "scripted": 0,
     "videos": 0,
@@ -1358,14 +1443,14 @@
      "h": 844
     },
     "page": {
-     "height": 18479,
-     "screens": 21.9,
-     "words": 1298,
-     "img": 5,
+     "height": 22797,
+     "screens": 27,
+     "words": 1646,
+     "img": 4,
      "video": 0,
      "canvas": 0,
-     "svg": 16,
-     "sections": 8,
+     "svg": 27,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -1374,10 +1459,10 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "national-assembly-of-bangladesh-06.jpg",
       "bd_epaper_banner.png",
       "bd_epaper_preview.png",
-      "nutrition_figure.png",
-      "national-assembly-of-bangladesh-06.jpg"
+      "nutrition_figure.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1457,9 +1542,9 @@
       "kind": "heading"
      },
      {
-      "text": "1,000+",
+      "text": "7+",
       "words": 1,
-      "chars": 6,
+      "chars": 2,
       "lines": 1,
       "size": 24.8,
       "vw": 6.4,
@@ -1478,9 +1563,9 @@
       "kind": "heading"
      },
      {
-      "text": "1",
+      "text": "1,000+",
       "words": 1,
-      "chars": 1,
+      "chars": 6,
       "lines": 1,
       "size": 24.8,
       "vw": 6.4,
@@ -1515,7 +1600,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.73,
-      "top": 1232,
+      "top": 1209,
       "tag": "div",
       "kind": "heading"
      },
@@ -1536,7 +1621,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 1436,
+      "top": 1413,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1557,7 +1642,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4032,
+      "top": 3931,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1578,7 +1663,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 9485,
+      "top": 11518,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1599,7 +1684,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 11686,
+      "top": 13718,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Public Discourse, Media & Perspectives",
+      "words": 5,
+      "chars": 38,
+      "lines": 2,
+      "size": 24.8,
+      "vw": 6.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 15311,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1620,7 +1726,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 13278,
+      "top": 17485,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1641,7 +1747,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 15216,
+      "top": 19528,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1662,18 +1768,18 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.43,
-      "top": 17626,
+      "top": 21884,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 12,
+     "count": 13,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
      "centered": 1,
-     "medianWords": 4,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1700,7 +1806,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 13.1
+      "contrast": 13.2
      },
      "measureChars": 34,
      "max": {
@@ -1717,27 +1823,27 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#070d15",
+     "bodyBg": "#070c14",
      "bodyBgHsl": {
-      "h": 214,
-      "s": 0.5,
+      "h": 217,
+      "s": 0.48,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#172033",
-       "top": -349,
+       "color": "#162133",
+       "top": -403,
        "hsl": {
-        "h": 221,
-        "s": 0.38,
-        "l": 0.15
+        "h": 217,
+        "s": 0.4,
+        "l": 0.14
        }
       },
       {
@@ -1750,11 +1856,11 @@
        }
       },
       {
-       "color": "#111b29",
-       "top": 1684,
+       "color": "#101b28",
+       "top": 1662,
        "hsl": {
-        "h": 215,
-        "s": 0.41,
+        "h": 213,
+        "s": 0.43,
         "l": 0.11
        }
       }
@@ -1762,41 +1868,41 @@
      "textColors": [
       {
        "color": "#e3e9f0",
-       "share": 0.45
+       "share": 0.47
       },
       {
-       "color": "#cad5e0",
-       "share": 0.3
+       "color": "#cbd5e1",
+       "share": 0.27
       },
       {
-       "color": "#fefeff",
-       "share": 0.18
+       "color": "#ffffff",
+       "share": 0.19
       },
       {
-       "color": "#60a5fa",
+       "color": "#60a4fb",
        "share": 0.05
       },
       {
-       "color": "#95a2b8",
+       "color": "#94a3b8",
        "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172033",
+      "bg": "#1f41af",
       "hsl": {
-       "h": 221,
-       "s": 0.38,
-       "l": 0.15
+       "h": 226,
+       "s": 0.7,
+       "l": 0.4
       },
-      "fg": "#fefeff"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 20,
+     "count": 31,
      "inHero": 4,
      "radius": 6,
-     "height": 31,
+     "height": 39,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1821,30 +1927,30 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 24,
+     "roundedBoxes": 33,
      "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 5,
+     "roundedMedia": 4,
      "mediaRadius": 14,
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 7,
+       "count": 11,
        "iconTopped": false,
        "rounded": true,
-       "top": 4496
+       "top": 4778
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 13469
+       "top": 17675
       }
      ]
     },
     "heroMedia": [],
     "nav": {
-     "links": 9,
+     "links": 10,
      "fixed": false,
      "height": 64,
      "floatingPill": false,
@@ -1859,18 +1965,18 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 18479,
+    "pageH": 22797,
     "margins": {
      "left": 20,
-     "right": 20
+     "right": 23
     },
     "sections": [
      {
       "sel": "section#hero.hero-section",
       "tag": "section",
       "top": 0,
-      "height": 1364,
-      "words": 111,
+      "height": 1341,
+      "words": 108,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1891,9 +1997,9 @@
      {
       "sel": "section#about.section.about-section",
       "tag": "section",
-      "top": 1364,
-      "height": 2596,
-      "words": 287,
+      "top": 1341,
+      "height": 2517,
+      "words": 266,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1914,10 +2020,10 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 3960,
-      "height": 5453,
-      "words": 428,
-      "media": 5,
+      "top": 3859,
+      "height": 7587,
+      "words": 639,
+      "media": 4,
       "middle": 0,
       "heading": {
        "text": "Selected Projects & Research Initiatives",
@@ -1937,7 +2043,7 @@
      {
       "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 9413,
+      "top": 11446,
       "height": 2200,
       "words": 143,
       "media": 0,
@@ -1960,7 +2066,7 @@
      {
       "sel": "section#teaching.section.teaching-section",
       "tag": "section",
-      "top": 11614,
+      "top": 13646,
       "height": 1593,
       "words": 137,
       "media": 0,
@@ -1981,11 +2087,34 @@
       "pinned": false
      },
      {
+      "sel": "section#media.section.media-section",
+      "tag": "section",
+      "top": 15239,
+      "height": 2174,
+      "words": 188,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Public Discourse, Media & Perspectives",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 24,
+      "textLeft": 20,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#toolkit.section.toolkit-section",
       "tag": "section",
-      "top": 13206,
-      "height": 1937,
-      "words": 101,
+      "top": 17413,
+      "height": 2043,
+      "words": 108,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2006,9 +2135,9 @@
      {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 15144,
-      "height": 2364,
-      "words": 220,
+      "top": 19456,
+      "height": 2311,
+      "words": 206,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2029,9 +2158,9 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 17508,
-      "height": 745,
-      "words": 41,
+      "top": 21766,
+      "height": 805,
+      "words": 46,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2052,7 +2181,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 18253,
+      "top": 22572,
       "height": 226,
       "words": 30,
       "media": 0,
@@ -2081,15 +2210,23 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 50,
-      "n": 40
+      "x": 52,
+      "n": 38
      },
      {
       "x": 20,
-      "n": 15
+      "n": 17
+     },
+     {
+      "x": 40,
+      "n": 14
+     },
+     {
+      "x": 98,
+      "n": 1
      }
     ],
-    "leftBlocks": 55,
+    "leftBlocks": 70,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -2113,7 +2250,7 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 172px on the left, 210px on the right, at 1440px.",
+   "message": "The margins differ: 172px on the left, 212px on the right, at 1440px.",
    "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
   },
   {

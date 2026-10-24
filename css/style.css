@@ -526,10 +526,70 @@ img {
   color: #ffffff;
 }
 
+/* --- GitHub Ecosystem Hub Banner --- */
+.github-hub-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  animation: entranceFade 0.6s var(--ease-spring) backwards;
+}
+
+.github-hub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.github-hub-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.github-hub-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-elevated);
+  color: var(--accent-text);
+  flex-shrink: 0;
+}
+
+.github-hub-title {
+  font-size: var(--text-subheading);
+  font-weight: 700;
+  color: var(--ink-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+
+.github-hub-desc {
+  font-size: var(--text-body);
+  color: var(--ink-secondary);
+  line-height: 1.5;
+  max-width: 640px;
+}
+
+.github-hub-action {
+  flex-shrink: 0;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 28px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project-card {
@@ -714,6 +774,156 @@ img {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+/* --- Media, Public Discourse & Perspectives --- */
+.media-editorial-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.media-feature-card {
+  padding: 38px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: entranceFade 0.6s var(--ease-spring) backwards;
+}
+
+.media-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.media-platform-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.platform-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.platform-icon.yt-bg {
+  background: #cc181e;
+}
+
+.platform-icon.fb-bg {
+  background: #1877f2;
+}
+
+.platform-icon.ig-bg {
+  background: #d62976;
+}
+
+.media-feature-title {
+  font-size: var(--text-subheading);
+  font-weight: 700;
+  color: var(--ink-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+.media-handle {
+  font-size: var(--text-small);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.media-status-pill {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  font-size: var(--text-small);
+  color: var(--accent-emerald);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.media-feature-desc {
+  font-size: var(--text-body);
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.media-highlights-box {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: var(--text-small);
+}
+
+.highlight-label {
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.highlight-val {
+  color: var(--ink-primary);
+  font-weight: 500;
+}
+
+.media-card-action {
+  margin-top: 24px;
+}
+
+.media-substream-column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.media-stream-card {
+  padding: 32px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: entranceFade 0.6s var(--ease-spring) backwards;
+}
+
+.media-stream-title {
+  font-size: var(--text-subheading);
+  font-weight: 700;
+  color: var(--ink-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+.media-stream-desc {
+  font-size: var(--text-body);
+  color: var(--ink-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* --- Toolkit Section --- */
@@ -1119,6 +1329,10 @@ img {
   .project-card.featured-highlight {
     grid-template-columns: 1fr;
   }
+
+  .media-editorial-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1206,9 +1420,52 @@ img {
     box-sizing: border-box;
   }
   
+  .github-hub-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .github-hub-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .github-hub-action {
+    width: 100%;
+  }
+  
+  .github-hub-action .btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .media-feature-card,
+  .media-stream-card {
+    padding: 24px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .media-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .media-card-action .btn {
+    width: 100%;
+    justify-content: center;
     box-sizing: border-box;
   }
   

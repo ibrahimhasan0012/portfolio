@@ -70,8 +70,8 @@ function initProjectFilters() {
       const filterValue = pill.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
+        const category = card.getAttribute('data-category') || '';
+        if (filterValue === 'all' || category.split(' ').includes(filterValue)) {
           card.style.display = '';
         } else {
           card.style.display = 'none';
@@ -180,6 +180,27 @@ const modalData = {
     content: `
       <p class="modal-body-text">
         An exploratory research inquiry analyzing structural gender disparities in mobile phone ownership, literacy, and early warning broadcast dissemination across coastal districts during tropical cyclones and storm surges.
+      </p>
+    `
+  },
+  'modal-findly': {
+    title: 'Findly BD — Automated Tech Deals Aggregator',
+    tag: 'Web Platform & Automation • JavaScript',
+    content: `
+      <p class="modal-body-text">
+        <strong>Findly BD</strong> is a minimalist web aggregator monitoring real-time price drops, promotions, and product availability across top consumer technology vendors in Bangladesh (Star Tech, Ryans, TechLand BD, Computer Village).
+      </p>
+      <h4 class="modal-section-title">Automated Data Pipeline</h4>
+      <ul class="track-list" style="margin-bottom: 20px;">
+        <li><strong>Scheduled Ingestion:</strong> Daily automated scraping workflows scheduled via GitHub Actions fetching updated retail pricing without manual intervention.</li>
+        <li><strong>Static High-Speed Delivery:</strong> Zero hosting overhead, built for fast mobile browsing with clean typography and instant search.</li>
+      </ul>
+      <h4 class="modal-section-title">Open Source Repository</h4>
+      <p class="modal-body-text">
+        Explore source code and workflow files at: <br>
+        <a href="https://github.com/ibrahimhasan0012/findly" target="_blank" rel="noopener noreferrer" style="color: var(--accent-text); font-weight: 600;">
+          github.com/ibrahimhasan0012/findly
+        </a>
       </p>
     `
   }
