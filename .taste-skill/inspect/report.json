@@ -1,0 +1,2055 @@
+{
+ "url": "http://localhost:8080",
+ "at": "2026-10-24T12:25:11.291Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.36,
+    0.6,
+    0.5,
+    0.7,
+    0.36,
+    0.65,
+    0.53,
+    0.44,
+    0.56,
+    0.44
+   ],
+   "motion": {
+    "elements": 30,
+    "css": 25,
+    "transitions": 5,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 8333,
+     "screens": 9.3,
+     "words": 1104,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "bd_epaper_preview.png",
+      "bd_epaper_banner.png",
+      "nutrition_figure.png",
+      "national-assembly-of-bangladesh-06.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "chars": 39,
+     "lines": 2,
+     "size": 70.4,
+     "vw": 4.9,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.5,
+     "top": 199,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "lines": 2,
+     "size": 70.4,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 70.4,
+      "vw": 4.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 199,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "10+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 656,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 656,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 656,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "8,500+",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 656,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "The Intersection of Policy & Engineering",
+      "words": 6,
+      "chars": 40,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 937,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Projects & Applied Systems",
+      "words": 5,
+      "chars": 35,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 1948,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scholarly Papers & Working Drafts",
+      "words": 5,
+      "chars": 33,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 4323,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Methodological Toolkit & Stack",
+      "words": 4,
+      "chars": 30,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 5694,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Institutional Engagements & Research Track",
+      "words": 5,
+      "chars": 42,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 6511,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Connect.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.03,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.18,
+      "top": 7703,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      20,
+      38,
+      70
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16.8,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.1
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 70.4,
+      "vw": 4.9,
+      "font": "Archivo",
+      "text": "Health Economics &"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#060c15",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.56,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#111b29",
+       "top": 2174,
+       "hsl": {
+        "h": 215,
+        "s": 0.41,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#0e1423",
+       "top": 7639,
+       "hsl": {
+        "h": 223,
+        "s": 0.43,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e2e8f0",
+       "share": 0.46
+      },
+      {
+       "color": "#cad4e1",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.19
+      },
+      {
+       "color": "#60a4fb",
+       "share": 0.04
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#172132",
+      "hsl": {
+       "h": 218,
+       "s": 0.37,
+       "l": 0.14
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 23,
+     "inHero": 3,
+     "radius": 6,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Connect",
+      "Explore Selected Works",
+      "Copy Direct Email"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 20,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4477
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5848
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 8333,
+    "margins": {
+     "left": 172,
+     "right": 212
+    },
+    "sections": [
+     {
+      "sel": "section#hero.hero-section",
+      "tag": "section",
+      "top": 0,
+      "height": 865,
+      "words": 79,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Health Economics &",
+       "size": 70,
+       "tag": "h1"
+      },
+      "left": 172,
+      "right": 221,
+      "textLeft": 172,
+      "textRight": 221,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section.about-section",
+      "tag": "section",
+      "top": 865,
+      "height": 1011,
+      "words": 249,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The Intersection of Policy & Engineering",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 212,
+      "textLeft": 172,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section.works-section",
+      "tag": "section",
+      "top": 1876,
+      "height": 2376,
+      "words": 372,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Projects & Applied Systems",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 172,
+      "textLeft": 172,
+      "textRight": 204,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#research.section.research-section",
+      "tag": "section",
+      "top": 4251,
+      "height": 1371,
+      "words": 207,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Scholarly Papers & Working Drafts",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 336,
+      "textLeft": 172,
+      "textRight": 336,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section.toolkit-section",
+      "tag": "section",
+      "top": 5622,
+      "height": 817,
+      "words": 92,
+      "media": 0,
+      "middle": 92,
+      "heading": {
+       "text": "Methodological Toolkit & Stack",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 227,
+      "textLeft": 172,
+      "textRight": 227,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.section.experience-section",
+      "tag": "section",
+      "top": 6439,
+      "height": 1120,
+      "words": 193,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Institutional Engagements & Research Track",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 438,
+      "textLeft": 172,
+      "textRight": 438,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section.contact-section",
+      "tag": "section",
+      "top": 7559,
+      "height": 590,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Connect.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 423,
+      "right": 423,
+      "textLeft": 423,
+      "textRight": 423,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 8149,
+      "height": 183,
+      "words": 30,
+      "media": 0,
+      "middle": 351,
+      "heading": null,
+      "left": 172,
+      "right": 192,
+      "textLeft": 172,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "size": 70,
+      "top": 199,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 202,
+      "n": 21
+     },
+     {
+      "x": 172,
+      "n": 12
+     },
+     {
+      "x": 579,
+      "n": 5
+     },
+     {
+      "x": 774,
+      "n": 4
+     },
+     {
+      "x": 953,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 45,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 960,
+     "y": 120,
+     "w": 480,
+     "h": 540
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.43,
+    0.86,
+    0.61,
+    0.86,
+    0.79,
+    0.79,
+    0.79,
+    0.73,
+    0.51,
+    0.73,
+    0.57
+   ],
+   "motion": {
+    "elements": 30,
+    "css": 25,
+    "transitions": 5,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 10714,
+     "screens": 10.5,
+     "words": 1104,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "bd_epaper_preview.png",
+      "bd_epaper_banner.png",
+      "nutrition_figure.png",
+      "national-assembly-of-bangladesh-06.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "chars": 39,
+     "lines": 2,
+     "size": 43.2,
+     "vw": 5.6,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.57,
+     "top": 159,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "lines": 2,
+     "size": 43.2,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 159,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      20,
+      26,
+      43
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16.8,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.1
+     },
+     "measureChars": 79,
+     "max": {
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "Archivo",
+      "text": "Health Economics &"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#060c15",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.56,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#111b29",
+       "top": 1021,
+       "hsl": {
+        "h": 215,
+        "s": 0.41,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#172132",
+       "top": 2569,
+       "hsl": {
+        "h": 218,
+        "s": 0.37,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#0e1423",
+       "top": 10046,
+       "hsl": {
+        "h": 223,
+        "s": 0.43,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e2e8f0",
+       "share": 0.46
+      },
+      {
+       "color": "#cad4e1",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.19
+      },
+      {
+       "color": "#60a4fb",
+       "share": 0.04
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#172132",
+      "hsl": {
+       "h": 218,
+       "s": 0.37,
+       "l": 0.14
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 23,
+     "inHero": 3,
+     "radius": 6,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Connect",
+      "Explore Selected Works",
+      "Copy Direct Email"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 20,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7707
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 10714,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#hero.hero-section",
+      "tag": "section",
+      "top": 0,
+      "height": 811,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Health Economics &",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 56,
+      "textLeft": 20,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section.about-section",
+      "tag": "section",
+      "top": 811,
+      "height": 1426,
+      "words": 249,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The Intersection of Policy & Engineering",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 32,
+      "textLeft": 20,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section.works-section",
+      "tag": "section",
+      "top": 2237,
+      "height": 3744,
+      "words": 372,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Projects & Applied Systems",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#research.section.research-section",
+      "tag": "section",
+      "top": 5981,
+      "height": 1516,
+      "words": 207,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Scholarly Papers & Working Drafts",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 56,
+      "textLeft": 20,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section.toolkit-section",
+      "tag": "section",
+      "top": 7497,
+      "height": 1311,
+      "words": 92,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Methodological Toolkit & Stack",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 55,
+      "textLeft": 20,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.section.experience-section",
+      "tag": "section",
+      "top": 8808,
+      "height": 1158,
+      "words": 193,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Institutional Engagements & Research Track",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 50,
+      "textLeft": 20,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section.contact-section",
+      "tag": "section",
+      "top": 9966,
+      "height": 523,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Connect.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 87,
+      "right": 87,
+      "textLeft": 87,
+      "textRight": 87,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 10488,
+      "height": 226,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 98,
+      "textLeft": 20,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "size": 43,
+      "top": 159,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 50,
+      "n": 32
+     },
+     {
+      "x": 20,
+      "n": 12
+     },
+     {
+      "x": 434,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 45,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.64,
+    0.7,
+    0.92,
+    0.92,
+    0.52,
+    0.92,
+    0.85,
+    0.92,
+    0.91,
+    0.91,
+    0.68,
+    0.92
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 25,
+    "transitions": 3,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 15709,
+     "screens": 18.6,
+     "words": 1104,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "bd_epaper_preview.png",
+      "bd_epaper_banner.png",
+      "nutrition_figure.png",
+      "national-assembly-of-bangladesh-06.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "chars": 39,
+     "lines": 2,
+     "size": 33.6,
+     "vw": 8.6,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.04,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.87,
+     "top": 181,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Health Economics & Systems Engineering.",
+     "words": 5,
+     "lines": 2,
+     "size": 33.6,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 181,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "10+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 783,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 872,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 962,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "8,500+",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 1051,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "The Intersection of Policy & Engineering",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1257,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Projects & Applied Systems",
+      "words": 5,
+      "chars": 35,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3775,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scholarly Papers & Working Drafts",
+      "words": 5,
+      "chars": 33,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8751,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Methodological Toolkit & Stack",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11051,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Institutional Engagements & Research Track",
+      "words": 5,
+      "chars": 42,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 12882,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Connect.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.03,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 14916,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      20,
+      26,
+      34
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16.8,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.1
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "Archivo",
+      "text": "Health Economics &"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#060c15",
+     "bodyBgHsl": {
+      "h": 216,
+      "s": 0.56,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#172132",
+       "top": -295,
+       "hsl": {
+        "h": 218,
+        "s": 0.37,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#0e1423",
+       "top": 751,
+       "hsl": {
+        "h": 223,
+        "s": 0.43,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#111b29",
+       "top": 1480,
+       "hsl": {
+        "h": 215,
+        "s": 0.41,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e2e8f0",
+       "share": 0.46
+      },
+      {
+       "color": "#cad4e1",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.19
+      },
+      {
+       "color": "#60a4fb",
+       "share": 0.04
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#172132",
+      "hsl": {
+       "h": 218,
+       "s": 0.37,
+       "l": 0.14
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 23,
+     "inHero": 3,
+     "radius": 6,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Connect",
+      "Explore Selected Works",
+      "Copy Direct Email"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 21,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4143
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8947
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 11248
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 15709,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#hero.hero-section",
+      "tag": "section",
+      "top": 0,
+      "height": 1185,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Health Economics &",
+       "size": 34,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 29,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section.about-section",
+      "tag": "section",
+      "top": 1185,
+      "height": 2519,
+      "words": 249,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The Intersection of Policy & Engineering",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section.works-section",
+      "tag": "section",
+      "top": 3703,
+      "height": 4976,
+      "words": 372,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Projects & Applied Systems",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#research.section.research-section",
+      "tag": "section",
+      "top": 8679,
+      "height": 2300,
+      "words": 207,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Scholarly Papers & Working Drafts",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section.toolkit-section",
+      "tag": "section",
+      "top": 10979,
+      "height": 1831,
+      "words": 92,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Methodological Toolkit & Stack",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.section.experience-section",
+      "tag": "section",
+      "top": 12810,
+      "height": 1989,
+      "words": 193,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Institutional Engagements & Research Track",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 42,
+      "textLeft": 20,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section.contact-section",
+      "tag": "section",
+      "top": 14798,
+      "height": 685,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Connect.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 42,
+      "right": 42,
+      "textLeft": 42,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 15484,
+      "height": 226,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Health Economics & Systems Engineering.",
+      "size": 34,
+      "top": 181,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 50,
+      "n": 33
+     },
+     {
+      "x": 20,
+      "n": 12
+     }
+    ],
+    "leftBlocks": 45,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 172px on the left, 212px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/desktop-page-01.jpg",
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/desktop-page-02.jpg",
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/tablet-page-01.jpg",
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/mobile-page-01.jpg",
+    "/Users/ibrahimhasan/Developer/portfolio/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

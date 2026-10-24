@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Hasan — Health Economist & Systems Engineer</title>
+  <meta name="description" content="Portfolio of Ibrahim Hasan. Health Economist, Empirical Researcher, and Software Developer specializing in health policy, econometrics, and Flutter mobile engineering.">
+  <meta name="author" content="Ibrahim Hasan">
+  <meta name="keywords" content="Ibrahim Hasan, Health Economics, Public Health, Econometrics, Flutter Developer, Bangladesh, BDHS, SSB Policy, Climate Adaptation">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ibrahim Hasan — Health Economist & Systems Engineer">
+  <meta property="og:description" content="Empirical health economics, public policy, and production mobile systems.">
+  <meta property="og:image" content="assets/bd_epaper_banner.png">
+  
+  <!-- Typeface: Archivo (Dealt by Taste-Skill Dark-Room Direction) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link" aria-label="Ibrahim Hasan Home">
+        <span class="brand-mark">IH</span>
+        <span class="brand-name">Ibrahim Hasan</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Focus</a></li>
+          <li><a href="#work" class="nav-link">Works</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle visual theme" title="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://github.com/ibrahimhasan0012" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="GitHub Profile" title="View GitHub Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <a href="#contact" class="btn btn-sm btn-primary">Connect</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-content">
+        <div class="hero-badge-wrap">
+          <span class="status-indicator"></span>
+          <span class="status-label">Available for Research & Engineering Consultations</span>
+        </div>
+
+        <h1 class="hero-title">
+          Health Economics & <br>
+          <span class="text-highlight">Systems Engineering.</span>
+        </h1>
+
+        <p class="hero-lead">
+          I am <strong>Ibrahim Hasan</strong> — a Health Economist, Quantitative Researcher, and Software Developer based in Dhaka. 
+          I bridge large-scale demographic surveys, non-communicable disease policy frameworks, and production-grade mobile engineering with Flutter.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-lg btn-primary">
+            <span>Explore Selected Works</span>
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <button id="copy-email-hero-btn" class="btn btn-lg btn-secondary copy-email-btn" data-email="ibrahimhasanzafar@gmail.com">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="btn-text">Copy Direct Email</span>
+          </button>
+        </div>
+
+        <!-- Metrics Strip (Full Ink, Tabular Numerals) -->
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-value">10+</div>
+            <div class="metric-label">Research & Policy Initiatives</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">1</div>
+            <div class="metric-label">Production Mobile App (BD E-Paper Hub)</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">5</div>
+            <div class="metric-label">South Asian Health Policy Syntheses</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">8,500+</div>
+            <div class="metric-label">Microdata Records Modeled (BDHS 2022)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual-Track Focus (About) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">The Intersection of Policy & Engineering</h2>
+          <p class="section-subtitle">
+            Rigorous quantitative methodologies grounded in public health economics, coupled with software craftsmanship in mobile applications and high-performance computing.
+          </p>
+        </div>
+
+        <div class="dual-track-grid">
+          <!-- Pillar 1: Research & Economics -->
+          <div class="track-card">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18"></path>
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+              </svg>
+            </div>
+            <h3 class="track-title">Health Economics & Empirical Policy</h3>
+            <p class="track-desc">
+              Designing and analyzing health policy interventions, consumer demand elasticities, and non-communicable disease (NCD) prevention strategies across South Asia.
+            </p>
+            <ul class="track-list">
+              <li>
+                <strong>Sugar-Sweetened Beverage (SSB) Taxation:</strong> Evaluating packaging compliance risks, Front-of-Pack Labeling (FoPL), and Food-EPI frameworks in partnership with ARK Foundation and WHO.
+              </li>
+              <li>
+                <strong>Demographic & Anthropometric Modeling:</strong> Analyzing nationally representative microdata (BDHS 2022) for child stunting, wasting, and maternal socioeconomic factors.
+              </li>
+              <li>
+                <strong>Climate Adaptation & Digital Equity:</strong> Investigating gender disparities in digital access and emergency cyclone/flood early-warning systems in coastal Bangladesh.
+              </li>
+              <li>
+                <strong>Regional Multi-Country Synthesis:</strong> Comparative policy frameworks spanning Bangladesh, India, Sri Lanka, Pakistan, and Nepal.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Software & Systems -->
+          <div class="track-card">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="track-title">Software Systems & Mobile Engineering</h3>
+            <p class="track-desc">
+              Building responsive, high-performance applications with clean architecture, state management, algorithmic optimizations, and automated research workflows.
+            </p>
+            <ul class="track-list">
+              <li>
+                <strong>Flutter Mobile App Development:</strong> Architected and built <em>BD E-Paper Hub</em> (`runner-epaper`), shipping Android APK/AAB releases with layered clean architectures.
+              </li>
+              <li>
+                <strong>High-Performance Computing (HPC):</strong> Parallel Simulated Annealing implementations utilizing C and CUDA for large-scale combinatorial search problems.
+              </li>
+              <li>
+                <strong>Reproducible Scientific Pipelines:</strong> Automated R and Python data cleaning, automated codebook generation, and verifiable validation tests.
+              </li>
+              <li>
+                <strong>Knowledge Engineering & AST Graphing:</strong> Designing comprehensive Obsidian second-brain vaults, code call-graph tools (Graft), and knowledge graph traversal.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Works & Portfolio Showcase -->
+    <section class="section works-section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Selected Projects & Applied Systems</h2>
+          <p class="section-subtitle">
+            A curated showcase of deployed software, empirical econometric models, and policy research initiatives.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="tablist" aria-label="Project Category Filter">
+          <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+          <button class="filter-pill" data-filter="mobile" role="tab" aria-selected="false">Mobile & Software</button>
+          <button class="filter-pill" data-filter="health-econ" role="tab" aria-selected="false">Health Economics</button>
+          <button class="filter-pill" data-filter="climate" role="tab" aria-selected="false">Climate & Policy</button>
+          <button class="filter-pill" data-filter="hpc" role="tab" aria-selected="false">HPC & Data</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Project 1: BD E-Paper Hub -->
+          <article class="project-card featured-highlight" data-category="mobile">
+            <div class="project-media">
+              <img src="assets/bd_epaper_preview.png" alt="BD E-Paper Hub Flutter Mobile App Interface Preview" class="project-image">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Flutter Mobile Application</span>
+                <span class="project-date">2026 Production Release</span>
+              </div>
+              <h3 class="project-title">BD E-Paper Hub (Runner E-Paper)</h3>
+              <p class="project-summary">
+                A high-performance Flutter mobile application engineered to aggregate, stream, and render daily print editions of Bangladesh's major national and regional e-papers. Implemented with clean layered architecture, offline reading preferences, and fluid pan-zoom navigation.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Android SDK</span>
+                <span class="tech-badge">iOS Runner</span>
+                <span class="tech-badge">WebView</span>
+                <span class="tech-badge">Clean Architecture</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-bdepaper">
+                  <span>Architecture Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SSB Packaging Risk Matrix -->
+          <article class="project-card" data-category="health-econ">
+            <div class="project-media-small">
+              <img src="assets/bd_epaper_banner.png" alt="SSB Health Policy Analysis Preview" class="project-thumb-image" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Health Economics & Food Policy</span>
+                <span class="project-date">ARK Foundation / WHO</span>
+              </div>
+              <h3 class="project-title">SSB Packaging Risk & Compliance Modeling</h3>
+              <p class="project-summary">
+                Empirical compliance modeling assessing nutritional labeling, Front-of-Pack Labeling (FoPL) standards, and consumer risk association. Formulated synthetic compliance models and separate OLS estimations to evaluate regulatory adherence among commercial beverage manufacturers.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">R</span>
+                <span class="tech-badge">Econometrics</span>
+                <span class="tech-badge">OLS Modeling</span>
+                <span class="tech-badge">Food-EPI</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-ssb">
+                  <span>View Methodology & Impact</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Climate Hazard Warnings & Digital Access -->
+          <article class="project-card" data-category="climate">
+            <div class="project-media-small">
+              <img src="assets/bangladesh-map-of-koppen-climate-classification.svg" alt="Bangladesh Climate Zones Map" class="project-thumb-image" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Climate Resilience & Demography</span>
+                <span class="project-date">Working Paper</span>
+              </div>
+              <h3 class="project-title">Digital Inequality & Climate Adaptation</h3>
+              <p class="project-summary">
+                Scholarly empirical investigation analyzing gender disparities in phone ownership, digital literacy, and last-mile early warning dissemination during tropical cyclones and storm surges across coastal districts.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">LaTeX</span>
+                <span class="tech-badge">Survey Econometrics</span>
+                <span class="tech-badge">Climate Risk</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-climate">
+                  <span>View Abstract & Citation</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: BDHS 2022 Child Undernutrition -->
+          <article class="project-card" data-category="health-econ">
+            <div class="project-media-small">
+              <img src="assets/nutrition_figure.png" alt="Child Undernutrition Statistical Figure" class="project-thumb-image" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Demographic & Microdata Analysis</span>
+                <span class="project-date">Academic Research</span>
+              </div>
+              <h3 class="project-title">Child Undernutrition Anthropometrics</h3>
+              <p class="project-summary">
+                End-to-end reproducible analytical pipeline cleaning, harmonizing, and analyzing 8,500+ child microdata records from the 2022 Bangladesh Demographic and Health Survey. Validated anthropometric Z-scores against official national benchmarks.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">R</span>
+                <span class="tech-badge">BDHS Microdata</span>
+                <span class="tech-badge">Anthropometrics</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-child-nutrition">
+                  <span>Pipeline & Findings</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Parallel Simulated Annealing HPC -->
+          <article class="project-card" data-category="hpc">
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">High-Performance Computing</span>
+                <span class="project-date">Systems & Algorithms</span>
+              </div>
+              <h3 class="project-title">Parallel Simulated Annealing HPC</h3>
+              <p class="project-summary">
+                Implementation and benchmarking of parallel simulated annealing algorithms utilizing C, OpenMP, and CUDA. Explored asynchronous cooling schedules, thread concurrency, and multi-core speedup profiles on high-performance compute clusters.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">CUDA</span>
+                <span class="tech-badge">OpenMP</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-hpc">
+                  <span>Technical Specifications</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Regional Health Policy Matrix -->
+          <article class="project-card" data-category="health-econ">
+            <div class="project-media-small">
+              <img src="assets/national-assembly-of-bangladesh-06.jpg" alt="Governance Architecture in Bangladesh" class="project-thumb-image" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Comparative Institutional Policy</span>
+                <span class="project-date">South Asia Synthesis</span>
+              </div>
+              <h3 class="project-title">Comparative South Asian Health Policy</h3>
+              <p class="project-summary">
+                Comparative legislative and regulatory review mapping fiscal taxation, mandatory labeling, and marketing restrictions on unhealthy food commodities across Bangladesh, India, Sri Lanka, Pakistan, and Nepal.
+              </p>
+              <div class="tech-stack-row">
+                <span class="tech-badge">Policy Evaluation</span>
+                <span class="tech-badge">Cross-Country Matrix</span>
+                <span class="tech-badge">NCD Prevention</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-modal-btn" data-modal="modal-regional-policy">
+                  <span>Framework Overview</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Papers & Academic Drafts -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Scholarly Papers & Working Drafts</h2>
+          <p class="section-subtitle">
+            Rigorous inquiries at the nexus of socio-economic vulnerability, health disparities, and disaster response.
+          </p>
+        </div>
+
+        <div class="papers-list">
+          <!-- Paper 1 -->
+          <div class="paper-card">
+            <div class="paper-badge">Working Paper • 2026</div>
+            <h3 class="paper-title">Women's Digital Access and Last-Mile Climate Hazard Warnings in Bangladesh</h3>
+            <div class="paper-authors">Ibrahim Hasan</div>
+            <p class="paper-desc">
+              Examines how unequal access to mobile phones and digital alert systems impacts timely evacuations and disaster mitigation among rural coastal women during major storm and flood events.
+            </p>
+            <div class="paper-tags">
+              <span>Climate Hazards</span>
+              <span>Digital Gender Divide</span>
+              <span>Disaster Preparedness</span>
+              <span>Econometric Analysis</span>
+            </div>
+            <div class="paper-footer">
+              <button class="btn btn-sm btn-secondary copy-citation-btn" data-cite="Hasan, I. (2026). Women's Digital Access and Last-Mile Climate Hazard Warnings in Bangladesh. Working Paper.">
+                Copy APA Citation
+              </button>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="modal-climate">
+                Abstract Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Paper 2 -->
+          <div class="paper-card">
+            <div class="paper-badge">Empirical Study • 2026</div>
+            <h3 class="paper-title">Child Undernutrition Determinants: Microdata Evidence from BDHS 2022</h3>
+            <div class="paper-authors">Ibrahim Hasan</div>
+            <p class="paper-desc">
+              Multivariate econometric regression modeling child anthropometric outcomes (HAZ, WAZ, WHZ) across 8,500+ surveyed households, controlling for maternal education, sanitation infrastructure, and regional wealth strata.
+            </p>
+            <div class="paper-tags">
+              <span>BDHS 2022</span>
+              <span>Child Stunting</span>
+              <span>Anthropometry</span>
+              <span>Public Health</span>
+            </div>
+            <div class="paper-footer">
+              <button class="btn btn-sm btn-secondary copy-citation-btn" data-cite="Hasan, I. (2026). Child Undernutrition Determinants: Microdata Evidence from BDHS 2022. Empirical Research Series.">
+                Copy APA Citation
+              </button>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="modal-child-nutrition">
+                Abstract Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Paper 3 -->
+          <div class="paper-card">
+            <div class="paper-badge">Policy Brief • 2026</div>
+            <h3 class="paper-title">Sugar-Sweetened Beverage Tax Impact & Front-of-Pack Nutrition Labeling in Bangladesh</h3>
+            <div class="paper-authors">Ibrahim Hasan, ARK Foundation Health Economics Group</div>
+            <p class="paper-desc">
+              Synthesizing Food-EPI indicators and packaging risk metrics to advocate for tiered excise taxation on high-sugar beverages to reduce growing cardiometabolic and diabetes burdens.
+            </p>
+            <div class="paper-tags">
+              <span>Fiscal Health Policy</span>
+              <span>NCD Prevention</span>
+              <span>SSB Taxation</span>
+              <span>Food-EPI</span>
+            </div>
+            <div class="paper-footer">
+              <button class="btn btn-sm btn-secondary copy-citation-btn" data-cite="Hasan, I. (2026). Sugar-Sweetened Beverage Tax Impact & Front-of-Pack Nutrition Labeling in Bangladesh. ARK Foundation Policy Brief.">
+                Copy APA Citation
+              </button>
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="modal-ssb">
+                Abstract Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical & Research Toolkit -->
+    <section class="section toolkit-section" id="toolkit">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Methodological Toolkit & Stack</h2>
+          <p class="section-subtitle">
+            Tools, programming languages, and research methodologies refined across software products and institutional studies.
+          </p>
+        </div>
+
+        <div class="toolkit-grid">
+          <!-- Category 1 -->
+          <div class="toolkit-card">
+            <h3 class="toolkit-category">Languages & Frameworks</h3>
+            <div class="skills-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Flutter & Dart</span>
+              <span class="skill-chip"><span class="chip-dot"></span>R (renv, Tidyverse)</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Python (Pandas, NumPy)</span>
+              <span class="skill-chip"><span class="chip-dot"></span>C / CUDA</span>
+              <span class="skill-chip"><span class="chip-dot"></span>HTML5 / CSS3 / JavaScript</span>
+              <span class="skill-chip"><span class="chip-dot"></span>SQL / SQLite</span>
+              <span class="skill-chip"><span class="chip-dot"></span>LaTeX</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="toolkit-card">
+            <h3 class="toolkit-category">Econometrics & Statistics</h3>
+            <div class="skills-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>OLS & GLM Regressions</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Discrete Choice Experiments (DCE)</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Demographic Survey Microdata</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Anthropometric Z-Scores</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Food-EPI Policy Benchmarking</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Compliance Risk Matrices</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="toolkit-card">
+            <h3 class="toolkit-category">Developer & Field Operations</h3>
+            <div class="skills-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Git & GitHub Automation</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Android Studio & iOS Xcode</span>
+              <span class="skill-chip"><span class="chip-dot"></span>KoboToolbox Form Design</span>
+              <span class="skill-chip"><span class="chip-dot"></span>BMRC Ethical Clearances</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Obsidian Second-Brain Systems</span>
+              <span class="skill-chip"><span class="chip-dot"></span>High-Performance Computing (HPC)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional & Academic Experience -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Institutional Engagements & Research Track</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Research Officer & Health Economics Specialist</h3>
+                  <div class="timeline-org">ARK Foundation, Bangladesh</div>
+                </div>
+                <span class="timeline-time">2024 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Leading analytical frameworks for the National Sugar-Sweetened Beverage (SSB) policy project, Discrete Choice Experiments (DCE), and Front-of-Pack Labeling (FoPL) studies. Managing BMRC ethical clearance protocols and multi-country health policy matrix synthesis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Lead Mobile Application Developer</h3>
+                  <div class="timeline-org">Runner E-Paper / Independent Engineering</div>
+                </div>
+                <span class="timeline-time">2025 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Conceptualized, architected, and shipped <em>BD E-Paper Hub</em> using Flutter and Dart. Designed clean client architectures with native WebView bindings, optimized memory utilization for multi-page PDF/raster rendering, and published standalone release builds.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Academic Lecturer & Quantitative Researcher</h3>
+                  <div class="timeline-org">Higher Education / Economics Department</div>
+                </div>
+                <span class="timeline-time">2023 — 2024</span>
+              </div>
+              <p class="timeline-desc">
+                Delivered undergraduate lectures in applied microeconomics, statistical methods, and quantitative research design. Supervised student project papers and demonstrated statistical modeling in R and Stata.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Public Health Collaborator (WHO NCD & CHORUS)</h3>
+                  <div class="timeline-org">Global Health Consortia</div>
+                </div>
+                <span class="timeline-time">2023 — 2026</span>
+              </div>
+              <p class="timeline-desc">
+                Collaborated on urban health system assessments, STEPS 2022 non-communicable disease survey analyses, and community-oriented primary care trials (COPE-BP).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2 class="contact-headline">Let's Connect.</h2>
+          <p class="contact-sub">
+            Whether you are looking for an economist for empirical health policy evaluation, a data scientist for microdata pipelines, or a software engineer to build production mobile apps — reach out directly.
+          </p>
+
+          <div class="email-display-wrap">
+            <a href="mailto:ibrahimhasanzafar@gmail.com" class="email-display-link" id="email-link">
+              ibrahimhasanzafar@gmail.com
+            </a>
+            <button class="btn btn-primary copy-email-btn" data-email="ibrahimhasanzafar@gmail.com" id="contact-copy-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="contact-links-row">
+            <a href="https://github.com/ibrahimhasan0012" target="_blank" rel="noopener noreferrer" class="contact-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>github.com/ibrahimhasan0012</span>
+            </a>
+            <div class="contact-chip location-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Ibrahim Hasan</span>
+        <span class="footer-copy">© <span id="current-year">2026</span> • Health Economics & Software Systems.</span>
+        <div class="footer-credits">
+          Open Imagery via Wikimedia Commons: Ali Zifan (CC BY-SA 4.0), Nahid Sultan & Saiful Aopu (CC BY-SA 3.0).
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project & Research Modals -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">×</button>
+      <div class="modal-content-container" id="modal-dynamic-content">
+        <!-- Injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- App Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
