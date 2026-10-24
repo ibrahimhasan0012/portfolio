@@ -21,7 +21,12 @@
   "direction": "dark-room"
  },
  "imagery": "atmosphere",
- "allow": [],
+ "allow": [
+  "few-pictures",
+  "no-footage",
+  "empty-screens",
+  "off-centre"
+ ],
  "direction": {
   "id": "dark-room",
   "name": "The dark room",
@@ -72,7 +77,12 @@
    "aww-cipher",
    "opl-deeo-studio-2"
   ],
-  "allow": [],
+  "allow": [
+   "few-pictures",
+   "no-footage",
+   "empty-screens",
+   "off-centre"
+  ],
   "photoTone": "dark"
  },
  "hero": {
