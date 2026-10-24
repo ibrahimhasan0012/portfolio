@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:8080",
- "at": "2026-10-24T12:25:11.291Z",
+ "at": "2026-10-24T12:32:23.528Z",
  "allow": [],
  "viewports": [
   {
@@ -9,21 +9,21 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.36,
-    0.6,
-    0.5,
-    0.7,
-    0.36,
-    0.65,
-    0.53,
-    0.44,
+    0.41,
+    0.58,
     0.56,
+    0.65,
+    0.56,
+    0.62,
+    0.54,
+    0.59,
+    0.58,
     0.44
    ],
    "motion": {
-    "elements": 30,
-    "css": 25,
-    "transitions": 5,
+    "elements": 34,
+    "css": 28,
+    "transitions": 6,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -34,14 +34,14 @@
      "h": 900
     },
     "page": {
-     "height": 8333,
-     "screens": 9.3,
-     "words": 1104,
+     "height": 8966,
+     "screens": 10,
+     "words": 1299,
      "img": 5,
      "video": 0,
      "canvas": 0,
-     "svg": 12,
-     "sections": 7,
+     "svg": 16,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -50,8 +50,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "bd_epaper_preview.png",
       "bd_epaper_banner.png",
+      "bd_epaper_preview.png",
       "nutrition_figure.png",
       "national-assembly-of-bangladesh-06.jpg"
      ],
@@ -62,9 +62,9 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
-     "chars": 39,
+     "chars": 35,
      "lines": 2,
      "size": 70.4,
      "vw": 4.9,
@@ -77,13 +77,13 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.5,
+     "widthRatio": 0.46,
      "top": 199,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
      "lines": 2,
      "size": 70.4,
@@ -91,9 +91,9 @@
     },
     "headings": [
      {
-      "text": "Health Economics & Systems Engineering.",
+      "text": "Health Economics & Applied Systems.",
       "words": 5,
-      "chars": 39,
+      "chars": 35,
       "lines": 2,
       "size": 70.4,
       "vw": 4.9,
@@ -106,7 +106,7 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.5,
+      "widthRatio": 0.46,
       "top": 199,
       "tag": "h1",
       "kind": "heading"
@@ -128,7 +128,28 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.17,
-      "top": 656,
+      "top": 720,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1,000+",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 720,
       "tag": "div",
       "kind": "heading"
      },
@@ -147,30 +168,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.17,
-      "top": 656,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "5",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 38.4,
-      "vw": 2.7,
-      "font": "Archivo",
-      "weight": 800,
-      "tracking": -0.02,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
       "position": "right",
       "widthRatio": 0.17,
-      "top": 656,
+      "top": 720,
       "tag": "div",
       "kind": "heading"
      },
@@ -191,7 +191,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.17,
-      "top": 656,
+      "top": 720,
       "tag": "div",
       "kind": "heading"
      },
@@ -212,14 +212,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 937,
+      "top": 1001,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Selected Projects & Applied Systems",
+      "text": "Selected Projects & Research Initiatives",
       "words": 5,
-      "chars": 35,
+      "chars": 40,
       "lines": 1,
       "size": 38.4,
       "vw": 2.7,
@@ -233,14 +233,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 1948,
+      "top": 2064,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Scholarly Papers & Working Drafts",
+      "text": "Academic Background & Graduate Training",
       "words": 5,
-      "chars": 33,
+      "chars": 39,
       "lines": 1,
       "size": 38.4,
       "vw": 2.7,
@@ -254,7 +254,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 4323,
+      "top": 4342,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Teaching, Mentorship & Academic Tutoring",
+      "words": 5,
+      "chars": 40,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 2.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 5286,
       "tag": "h2",
       "kind": "heading"
      },
@@ -275,7 +296,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 5694,
+      "top": 6057,
       "tag": "h2",
       "kind": "heading"
      },
@@ -296,7 +317,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.76,
-      "top": 6511,
+      "top": 6901,
       "tag": "h2",
       "kind": "heading"
      },
@@ -317,13 +338,13 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.18,
-      "top": 7703,
+      "top": 8336,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 11,
+     "count": 12,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -357,7 +378,7 @@
       "tracking": 0,
       "contrast": 13.1
      },
-     "measureChars": 34,
+     "measureChars": 55,
      "max": {
       "size": 70.4,
       "vw": 4.9,
@@ -372,23 +393,23 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.07,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#060c15",
+     "bodyBg": "#070d15",
      "bodyBgHsl": {
-      "h": 216,
-      "s": 0.56,
+      "h": 214,
+      "s": 0.5,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
        "color": "#111b29",
-       "top": 2174,
+       "top": 1154,
        "hsl": {
         "h": 215,
         "s": 0.41,
@@ -396,51 +417,51 @@
        }
       },
       {
-       "color": "#0e1423",
-       "top": 7639,
+       "color": "#0f1422",
+       "top": 8272,
        "hsl": {
-        "h": 223,
-        "s": 0.43,
+        "h": 224,
+        "s": 0.39,
         "l": 0.1
        }
       }
      ],
      "textColors": [
       {
-       "color": "#e2e8f0",
-       "share": 0.46
+       "color": "#e3e9f0",
+       "share": 0.45
       },
       {
-       "color": "#cad4e1",
-       "share": 0.28
+       "color": "#cad5e0",
+       "share": 0.3
       },
       {
-       "color": "#ffffff",
-       "share": 0.19
+       "color": "#fefeff",
+       "share": 0.18
       },
       {
-       "color": "#60a4fb",
-       "share": 0.04
+       "color": "#60a5fa",
+       "share": 0.05
       },
       {
-       "color": "#94a3b8",
-       "share": 0.03
+       "color": "#95a2b8",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172132",
+      "bg": "#172033",
       "hsl": {
-       "h": 218,
-       "s": 0.37,
-       "l": 0.14
+       "h": 221,
+       "s": 0.38,
+       "l": 0.15
       },
-      "fg": "#ffffff"
+      "fg": "#fefeff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 23,
-     "inHero": 3,
+     "count": 21,
+     "inHero": 5,
      "radius": 6,
      "height": 31,
      "withShadow": 0,
@@ -448,9 +469,11 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
+      "CV",
       "Connect",
-      "Explore Selected Works",
-      "Copy Direct Email"
+      "Explore Research & Works",
+      "Download CV (PDF)",
+      "Copy Email"
      ]
     },
     "surfaces": {
@@ -466,7 +489,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 20,
+     "roundedBoxes": 23,
      "boxRadius": 14,
      "squareMedia": 0,
      "roundedMedia": 5,
@@ -477,19 +500,13 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 4477
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 5848
+       "top": 6211
       }
      ]
     },
     "heroMedia": [],
     "nav": {
-     "links": 9,
+     "links": 11,
      "fixed": false,
      "height": 72,
      "floatingPill": false,
@@ -504,29 +521,29 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8333,
+    "pageH": 8966,
     "margins": {
      "left": 172,
-     "right": 212
+     "right": 210
     },
     "sections": [
      {
       "sel": "section#hero.hero-section",
       "tag": "section",
       "top": 0,
-      "height": 865,
-      "words": 79,
+      "height": 929,
+      "words": 111,
       "media": 0,
-      "middle": 29,
+      "middle": 3,
       "heading": {
        "text": "Health Economics &",
        "size": 70,
        "tag": "h1"
       },
       "left": 172,
-      "right": 221,
+      "right": 226,
       "textLeft": 172,
-      "textRight": 221,
+      "textRight": 226,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -536,9 +553,9 @@
      {
       "sel": "section#about.section.about-section",
       "tag": "section",
-      "top": 865,
-      "height": 1011,
-      "words": 249,
+      "top": 929,
+      "height": 1064,
+      "words": 287,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -547,9 +564,9 @@
        "tag": "h2"
       },
       "left": 172,
-      "right": 212,
+      "right": 215,
       "textLeft": 172,
-      "textRight": 212,
+      "textRight": 215,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -559,13 +576,13 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 1876,
-      "height": 2376,
-      "words": 372,
+      "top": 1992,
+      "height": 2278,
+      "words": 428,
       "media": 5,
       "middle": 0,
       "heading": {
-       "text": "Selected Projects & Applied Systems",
+       "text": "Selected Projects & Research Initiatives",
        "size": 38,
        "tag": "h2"
       },
@@ -580,22 +597,22 @@
       "pinned": false
      },
      {
-      "sel": "section#research.section.research-section",
+      "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 4251,
-      "height": 1371,
-      "words": 207,
+      "top": 4270,
+      "height": 945,
+      "words": 143,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Scholarly Papers & Working Drafts",
+       "text": "Academic Background & Graduate Training",
        "size": 38,
        "tag": "h2"
       },
       "left": 172,
-      "right": 336,
+      "right": 210,
       "textLeft": 172,
-      "textRight": 336,
+      "textRight": 210,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -603,15 +620,15 @@
       "pinned": false
      },
      {
-      "sel": "section#toolkit.section.toolkit-section",
+      "sel": "section#teaching.section.teaching-section",
       "tag": "section",
-      "top": 5622,
-      "height": 817,
-      "words": 92,
+      "top": 5214,
+      "height": 771,
+      "words": 137,
       "media": 0,
-      "middle": 92,
+      "middle": 0,
       "heading": {
-       "text": "Methodological Toolkit & Stack",
+       "text": "Teaching, Mentorship & Academic Tutoring",
        "size": 38,
        "tag": "h2"
       },
@@ -626,11 +643,34 @@
       "pinned": false
      },
      {
+      "sel": "section#toolkit.section.toolkit-section",
+      "tag": "section",
+      "top": 5985,
+      "height": 844,
+      "words": 101,
+      "media": 0,
+      "middle": 119,
+      "heading": {
+       "text": "Methodological Toolkit & Stack",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 172,
+      "right": 219,
+      "textLeft": 172,
+      "textRight": 219,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 6439,
-      "height": 1120,
-      "words": 193,
+      "top": 6829,
+      "height": 1364,
+      "words": 220,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -651,9 +691,9 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 7559,
+      "top": 8192,
       "height": 590,
-      "words": 42,
+      "words": 41,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -661,10 +701,10 @@
        "size": 38,
        "tag": "h2"
       },
-      "left": 423,
-      "right": 423,
-      "textLeft": 423,
-      "textRight": 423,
+      "left": 417,
+      "right": 408,
+      "textLeft": 417,
+      "textRight": 408,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -674,7 +714,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 8149,
+      "top": 8783,
       "height": 183,
       "words": 30,
       "media": 0,
@@ -694,7 +734,7 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Health Economics & Systems Engineering.",
+      "text": "Health Economics & Applied Systems.",
       "size": 70,
       "top": 199,
       "firstScreen": true
@@ -708,32 +748,32 @@
      },
      {
       "x": 172,
-      "n": 12
+      "n": 15
+     },
+     {
+      "x": 774,
+      "n": 9
      },
      {
       "x": 579,
       "n": 5
      },
      {
-      "x": 774,
-      "n": 4
-     },
-     {
       "x": 953,
-      "n": 3
+      "n": 5
      }
     ],
-    "leftBlocks": 45,
+    "leftBlocks": 55,
     "bodySize": 17,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.2,
+    "voidShare": 0.19,
     "voidBox": {
-     "x": 960,
+     "x": 1020,
      "y": 120,
-     "w": 480,
-     "h": 540
+     "w": 420,
+     "h": 600
     }
    },
    "app": null,
@@ -743,24 +783,25 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
-    0.43,
+    0.71,
+    0.83,
+    0.65,
+    0.92,
     0.86,
-    0.61,
     0.86,
-    0.79,
-    0.79,
-    0.79,
     0.73,
-    0.51,
+    0.68,
+    0.68,
+    0.55,
     0.73,
-    0.57
+    0.65
    ],
    "motion": {
-    "elements": 30,
-    "css": 25,
-    "transitions": 5,
+    "elements": 34,
+    "css": 28,
+    "transitions": 6,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -771,14 +812,14 @@
      "h": 1024
     },
     "page": {
-     "height": 10714,
-     "screens": 10.5,
-     "words": 1104,
+     "height": 12342,
+     "screens": 12.1,
+     "words": 1298,
      "img": 5,
      "video": 0,
      "canvas": 0,
-     "svg": 12,
-     "sections": 7,
+     "svg": 16,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -787,8 +828,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "bd_epaper_preview.png",
       "bd_epaper_banner.png",
+      "bd_epaper_preview.png",
       "nutrition_figure.png",
       "national-assembly-of-bangladesh-06.jpg"
      ],
@@ -799,12 +840,12 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
-     "chars": 39,
+     "chars": 35,
      "lines": 2,
-     "size": 43.2,
-     "vw": 5.6,
+     "size": 37.6,
+     "vw": 4.9,
      "font": "Archivo",
      "weight": 800,
      "tracking": -0.04,
@@ -813,27 +854,27 @@
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "left",
-     "widthRatio": 0.57,
+     "position": "center",
+     "widthRatio": 0.95,
      "top": 159,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
      "lines": 2,
-     "size": 43.2,
+     "size": 37.6,
      "font": "Archivo"
     },
     "headings": [
      {
-      "text": "Health Economics & Systems Engineering.",
+      "text": "Health Economics & Applied Systems.",
       "words": 5,
-      "chars": 39,
+      "chars": 35,
       "lines": 2,
-      "size": 43.2,
-      "vw": 5.6,
+      "size": 37.6,
+      "vw": 4.9,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.04,
@@ -842,8 +883,8 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.57,
+      "position": "center",
+      "widthRatio": 0.95,
       "top": 159,
       "tag": "h1",
       "kind": "heading"
@@ -871,8 +912,8 @@
       14,
       17,
       20,
-      26,
-      43
+      25,
+      38
      ],
      "sizeCount": 5,
      "notLoaded": [],
@@ -886,8 +927,8 @@
      },
      "measureChars": 79,
      "max": {
-      "size": 43.2,
-      "vw": 5.6,
+      "size": 37.6,
+      "vw": 4.9,
       "font": "Archivo",
       "text": "Health Economics &"
      },
@@ -899,23 +940,32 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.07,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#060c15",
+     "bodyBg": "#070d15",
      "bodyBgHsl": {
-      "h": 216,
-      "s": 0.56,
+      "h": 214,
+      "s": 0.5,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
+       "color": "#172033",
+       "top": -349,
+       "hsl": {
+        "h": 221,
+        "s": 0.38,
+        "l": 0.15
+       }
+      },
+      {
        "color": "#111b29",
-       "top": 1021,
+       "top": 1175,
        "hsl": {
         "h": 215,
         "s": 0.41,
@@ -923,60 +973,51 @@
        }
       },
       {
-       "color": "#172132",
-       "top": 2569,
+       "color": "#0f1422",
+       "top": 11675,
        "hsl": {
-        "h": 218,
-        "s": 0.37,
-        "l": 0.14
-       }
-      },
-      {
-       "color": "#0e1423",
-       "top": 10046,
-       "hsl": {
-        "h": 223,
-        "s": 0.43,
+        "h": 224,
+        "s": 0.39,
         "l": 0.1
        }
       }
      ],
      "textColors": [
       {
-       "color": "#e2e8f0",
-       "share": 0.46
+       "color": "#e3e9f0",
+       "share": 0.45
       },
       {
-       "color": "#cad4e1",
-       "share": 0.28
+       "color": "#cad5e0",
+       "share": 0.3
       },
       {
-       "color": "#ffffff",
-       "share": 0.19
+       "color": "#fefeff",
+       "share": 0.18
       },
       {
-       "color": "#60a4fb",
-       "share": 0.04
+       "color": "#60a5fa",
+       "share": 0.05
       },
       {
-       "color": "#94a3b8",
-       "share": 0.03
+       "color": "#95a2b8",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172132",
+      "bg": "#172033",
       "hsl": {
-       "h": 218,
-       "s": 0.37,
-       "l": 0.14
+       "h": 221,
+       "s": 0.38,
+       "l": 0.15
       },
-      "fg": "#ffffff"
+      "fg": "#fefeff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 23,
-     "inHero": 3,
+     "count": 20,
+     "inHero": 4,
      "radius": 6,
      "height": 31,
      "withShadow": 0,
@@ -984,9 +1025,10 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Connect",
-      "Explore Selected Works",
-      "Copy Direct Email"
+      "CV",
+      "Explore Research & Works",
+      "Download CV (PDF)",
+      "Copy Email"
      ]
     },
     "surfaces": {
@@ -1002,7 +1044,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 20,
+     "roundedBoxes": 23,
      "boxRadius": 14,
      "squareMedia": 0,
      "roundedMedia": 5,
@@ -1013,7 +1055,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 7707
+       "top": 9034
       }
      ]
     },
@@ -1034,7 +1076,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10714,
+    "pageH": 12342,
     "margins": {
      "left": 20,
      "right": 20
@@ -1044,19 +1086,19 @@
       "sel": "section#hero.hero-section",
       "tag": "section",
       "top": 0,
-      "height": 811,
-      "words": 79,
+      "height": 966,
+      "words": 111,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Health Economics &",
-       "size": 43,
+       "size": 38,
        "tag": "h1"
       },
       "left": 20,
-      "right": 56,
+      "right": 20,
       "textLeft": 20,
-      "textRight": 56,
+      "textRight": 20,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1066,20 +1108,20 @@
      {
       "sel": "section#about.section.about-section",
       "tag": "section",
-      "top": 811,
-      "height": 1426,
-      "words": 249,
+      "top": 966,
+      "height": 1504,
+      "words": 287,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "The Intersection of Policy & Engineering",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 32,
+      "right": 34,
       "textLeft": 20,
-      "textRight": 32,
+      "textRight": 34,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1089,20 +1131,20 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 2237,
-      "height": 3744,
-      "words": 372,
+      "top": 2470,
+      "height": 4057,
+      "words": 428,
       "media": 5,
       "middle": 0,
       "heading": {
-       "text": "Selected Projects & Applied Systems",
-       "size": 26,
+       "text": "Selected Projects & Research Initiatives",
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
       "right": 20,
       "textLeft": 20,
-      "textRight": 52,
+      "textRight": 46,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1110,22 +1152,45 @@
       "pinned": false
      },
      {
-      "sel": "section#research.section.research-section",
+      "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 5981,
-      "height": 1516,
-      "words": 207,
+      "top": 6527,
+      "height": 1224,
+      "words": 143,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Scholarly Papers & Working Drafts",
-       "size": 26,
+       "text": "Academic Background & Graduate Training",
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 56,
+      "right": 58,
       "textLeft": 20,
-      "textRight": 56,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching.section.teaching-section",
+      "tag": "section",
+      "top": 7751,
+      "height": 1074,
+      "words": 137,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching, Mentorship & Academic Tutoring",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 40,
+      "textLeft": 20,
+      "textRight": 40,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1135,20 +1200,20 @@
      {
       "sel": "section#toolkit.section.toolkit-section",
       "tag": "section",
-      "top": 7497,
-      "height": 1311,
-      "words": 92,
+      "top": 8826,
+      "height": 1395,
+      "words": 101,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Methodological Toolkit & Stack",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 55,
+      "right": 79,
       "textLeft": 20,
-      "textRight": 55,
+      "textRight": 79,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1158,14 +1223,14 @@
      {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 8808,
-      "height": 1158,
-      "words": 193,
+      "top": 10221,
+      "height": 1374,
+      "words": 220,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Institutional Engagements & Research Track",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
@@ -1181,20 +1246,20 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 9966,
-      "height": 523,
-      "words": 42,
+      "top": 11595,
+      "height": 522,
+      "words": 41,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Let's Connect.",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
-      "left": 87,
-      "right": 87,
-      "textLeft": 87,
-      "textRight": 87,
+      "left": 81,
+      "right": 72,
+      "textLeft": 81,
+      "textRight": 72,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1204,7 +1269,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 10488,
+      "top": 12117,
       "height": 226,
       "words": 30,
       "media": 0,
@@ -1224,8 +1289,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Health Economics & Systems Engineering.",
-      "size": 43,
+      "text": "Health Economics & Applied Systems.",
+      "size": 38,
       "top": 159,
       "firstScreen": true
      }
@@ -1234,18 +1299,22 @@
     "edges": [
      {
       "x": 50,
-      "n": 32
+      "n": 38
      },
      {
       "x": 20,
-      "n": 12
+      "n": 15
+     },
+     {
+      "x": 121,
+      "n": 1
      },
      {
       "x": 434,
       "n": 1
      }
     ],
-    "leftBlocks": 45,
+    "leftBlocks": 55,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -1262,23 +1331,23 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.64,
-    0.7,
-    0.92,
-    0.92,
-    0.52,
-    0.92,
-    0.85,
-    0.92,
-    0.91,
-    0.91,
+    0.67,
     0.68,
-    0.92
+    0.92,
+    0.92,
+    0.63,
+    0.67,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.73
    ],
    "motion": {
-    "elements": 28,
-    "css": 25,
-    "transitions": 3,
+    "elements": 30,
+    "css": 28,
+    "transitions": 2,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1289,14 +1358,14 @@
      "h": 844
     },
     "page": {
-     "height": 15709,
-     "screens": 18.6,
-     "words": 1104,
+     "height": 18479,
+     "screens": 21.9,
+     "words": 1298,
      "img": 5,
      "video": 0,
      "canvas": 0,
-     "svg": 12,
-     "sections": 7,
+     "svg": 16,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -1305,8 +1374,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "bd_epaper_preview.png",
       "bd_epaper_banner.png",
+      "bd_epaper_preview.png",
       "nutrition_figure.png",
       "national-assembly-of-bangladesh-06.jpg"
      ],
@@ -1317,12 +1386,12 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
-     "chars": 39,
+     "chars": 35,
      "lines": 2,
-     "size": 33.6,
-     "vw": 8.6,
+     "size": 30.4,
+     "vw": 7.8,
      "font": "Archivo",
      "weight": 800,
      "tracking": -0.04,
@@ -1332,26 +1401,26 @@
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.87,
+     "widthRatio": 0.9,
      "top": 181,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Health Economics & Systems Engineering.",
+     "text": "Health Economics & Applied Systems.",
      "words": 5,
      "lines": 2,
-     "size": 33.6,
+     "size": 30.4,
      "font": "Archivo"
     },
     "headings": [
      {
-      "text": "Health Economics & Systems Engineering.",
+      "text": "Health Economics & Applied Systems.",
       "words": 5,
-      "chars": 39,
+      "chars": 35,
       "lines": 2,
-      "size": 33.6,
-      "vw": 8.6,
+      "size": 30.4,
+      "vw": 7.8,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.04,
@@ -1361,7 +1430,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.87,
+      "widthRatio": 0.9,
       "top": 181,
       "tag": "h1",
       "kind": "heading"
@@ -1371,8 +1440,8 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.02,
@@ -1383,7 +1452,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.73,
-      "top": 783,
+      "top": 945,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1,000+",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 24.8,
+      "vw": 6.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 1033,
       "tag": "div",
       "kind": "heading"
      },
@@ -1392,8 +1482,8 @@
       "words": 1,
       "chars": 1,
       "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.02,
@@ -1404,28 +1494,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.73,
-      "top": 872,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "5",
-      "words": 1,
-      "chars": 1,
-      "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
-      "font": "Archivo",
-      "weight": 800,
-      "tracking": -0.02,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.73,
-      "top": 962,
+      "top": 1121,
       "tag": "div",
       "kind": "heading"
      },
@@ -1434,8 +1503,8 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.02,
@@ -1446,7 +1515,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.73,
-      "top": 1051,
+      "top": 1232,
       "tag": "div",
       "kind": "heading"
      },
@@ -1455,8 +1524,8 @@
       "words": 6,
       "chars": 40,
       "lines": 2,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 700,
       "tracking": -0.025,
@@ -1467,17 +1536,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 1257,
+      "top": 1436,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Selected Projects & Applied Systems",
+      "text": "Selected Projects & Research Initiatives",
       "words": 5,
-      "chars": 35,
+      "chars": 40,
       "lines": 2,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 700,
       "tracking": -0.025,
@@ -1488,17 +1557,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3775,
+      "top": 4032,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Scholarly Papers & Working Drafts",
+      "text": "Academic Background & Graduate Training",
       "words": 5,
-      "chars": 33,
+      "chars": 39,
       "lines": 2,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 700,
       "tracking": -0.025,
@@ -1509,7 +1578,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8751,
+      "top": 9485,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Teaching, Mentorship & Academic Tutoring",
+      "words": 5,
+      "chars": 40,
+      "lines": 2,
+      "size": 24.8,
+      "vw": 6.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11686,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1517,9 +1607,9 @@
       "text": "Methodological Toolkit & Stack",
       "words": 4,
       "chars": 30,
-      "lines": 2,
-      "size": 25.6,
-      "vw": 6.6,
+      "lines": 1,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 700,
       "tracking": -0.025,
@@ -1530,7 +1620,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 11051,
+      "top": 13278,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1539,8 +1629,8 @@
       "words": 5,
       "chars": 42,
       "lines": 2,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 700,
       "tracking": -0.025,
@@ -1551,7 +1641,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 12882,
+      "top": 15216,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1560,8 +1650,8 @@
       "words": 2,
       "chars": 14,
       "lines": 1,
-      "size": 25.6,
-      "vw": 6.6,
+      "size": 24.8,
+      "vw": 6.4,
       "font": "Archivo",
       "weight": 800,
       "tracking": -0.03,
@@ -1571,14 +1661,14 @@
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.45,
-      "top": 14916,
+      "widthRatio": 0.43,
+      "top": 17626,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 11,
+     "count": 12,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -1599,8 +1689,8 @@
       14,
       17,
       20,
-      26,
-      34
+      25,
+      30
      ],
      "sizeCount": 5,
      "notLoaded": [],
@@ -1614,8 +1704,8 @@
      },
      "measureChars": 34,
      "max": {
-      "size": 33.6,
-      "vw": 8.6,
+      "size": 30.4,
+      "vw": 7.8,
       "font": "Archivo",
       "text": "Health Economics &"
      },
@@ -1627,41 +1717,41 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.07,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#060c15",
+     "bodyBg": "#070d15",
      "bodyBgHsl": {
-      "h": 216,
-      "s": 0.56,
+      "h": 214,
+      "s": 0.5,
       "l": 0.05
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#172132",
-       "top": -295,
+       "color": "#172033",
+       "top": -349,
        "hsl": {
-        "h": 218,
-        "s": 0.37,
-        "l": 0.14
+        "h": 221,
+        "s": 0.38,
+        "l": 0.15
        }
       },
       {
-       "color": "#0e1423",
-       "top": 751,
+       "color": "#0f1422",
+       "top": 913,
        "hsl": {
-        "h": 223,
-        "s": 0.43,
+        "h": 224,
+        "s": 0.39,
         "l": 0.1
        }
       },
       {
        "color": "#111b29",
-       "top": 1480,
+       "top": 1684,
        "hsl": {
         "h": 215,
         "s": 0.41,
@@ -1671,40 +1761,40 @@
      ],
      "textColors": [
       {
-       "color": "#e2e8f0",
-       "share": 0.46
+       "color": "#e3e9f0",
+       "share": 0.45
       },
       {
-       "color": "#cad4e1",
-       "share": 0.28
+       "color": "#cad5e0",
+       "share": 0.3
       },
       {
-       "color": "#ffffff",
-       "share": 0.19
+       "color": "#fefeff",
+       "share": 0.18
       },
       {
-       "color": "#60a4fb",
-       "share": 0.04
+       "color": "#60a5fa",
+       "share": 0.05
       },
       {
-       "color": "#94a3b8",
-       "share": 0.03
+       "color": "#95a2b8",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#172132",
+      "bg": "#172033",
       "hsl": {
-       "h": 218,
-       "s": 0.37,
-       "l": 0.14
+       "h": 221,
+       "s": 0.38,
+       "l": 0.15
       },
-      "fg": "#ffffff"
+      "fg": "#fefeff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 23,
-     "inHero": 3,
+     "count": 20,
+     "inHero": 4,
      "radius": 6,
      "height": 31,
      "withShadow": 0,
@@ -1712,9 +1802,10 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Connect",
-      "Explore Selected Works",
-      "Copy Direct Email"
+      "CV",
+      "Explore Research & Works",
+      "Download CV (PDF)",
+      "Copy Email"
      ]
     },
     "surfaces": {
@@ -1730,7 +1821,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 21,
+     "roundedBoxes": 24,
      "boxRadius": 14,
      "squareMedia": 0,
      "roundedMedia": 5,
@@ -1738,22 +1829,16 @@
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 6,
+       "count": 7,
        "iconTopped": false,
        "rounded": true,
-       "top": 4143
+       "top": 4496
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 8947
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 11248
+       "top": 13469
       }
      ]
     },
@@ -1774,7 +1859,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 15709,
+    "pageH": 18479,
     "margins": {
      "left": 20,
      "right": 20
@@ -1784,19 +1869,19 @@
       "sel": "section#hero.hero-section",
       "tag": "section",
       "top": 0,
-      "height": 1185,
-      "words": 79,
+      "height": 1364,
+      "words": 111,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Health Economics &",
-       "size": 34,
+       "size": 30,
        "tag": "h1"
       },
       "left": 20,
-      "right": 29,
+      "right": 20,
       "textLeft": 20,
-      "textRight": 29,
+      "textRight": 37,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1806,20 +1891,20 @@
      {
       "sel": "section#about.section.about-section",
       "tag": "section",
-      "top": 1185,
-      "height": 2519,
-      "words": 249,
+      "top": 1364,
+      "height": 2596,
+      "words": 287,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "The Intersection of Policy & Engineering",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 22,
+      "right": 38,
       "textLeft": 20,
-      "textRight": 22,
+      "textRight": 38,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1829,20 +1914,20 @@
      {
       "sel": "section#work.section.works-section",
       "tag": "section",
-      "top": 3703,
-      "height": 4976,
-      "words": 372,
+      "top": 3960,
+      "height": 5453,
+      "words": 428,
       "media": 5,
       "middle": 0,
       "heading": {
-       "text": "Selected Projects & Applied Systems",
-       "size": 26,
+       "text": "Selected Projects & Research Initiatives",
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
       "right": 20,
       "textLeft": 20,
-      "textRight": 49,
+      "textRight": 37,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1850,22 +1935,45 @@
       "pinned": false
      },
      {
-      "sel": "section#research.section.research-section",
+      "sel": "section#academics.section.academics-section",
       "tag": "section",
-      "top": 8679,
-      "height": 2300,
-      "words": 207,
+      "top": 9413,
+      "height": 2200,
+      "words": 143,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Scholarly Papers & Working Drafts",
-       "size": 26,
+       "text": "Academic Background & Graduate Training",
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 36,
+      "right": 58,
       "textLeft": 20,
-      "textRight": 36,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching.section.teaching-section",
+      "tag": "section",
+      "top": 11614,
+      "height": 1593,
+      "words": 137,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching, Mentorship & Academic Tutoring",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 27,
+      "textLeft": 20,
+      "textRight": 27,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1875,20 +1983,20 @@
      {
       "sel": "section#toolkit.section.toolkit-section",
       "tag": "section",
-      "top": 10979,
-      "height": 1831,
-      "words": 92,
+      "top": 13206,
+      "height": 1937,
+      "words": 101,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Methodological Toolkit & Stack",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 36,
+      "right": 23,
       "textLeft": 20,
-      "textRight": 36,
+      "textRight": 23,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1898,20 +2006,20 @@
      {
       "sel": "section#experience.section.experience-section",
       "tag": "section",
-      "top": 12810,
-      "height": 1989,
-      "words": 193,
+      "top": 15144,
+      "height": 2364,
+      "words": 220,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Institutional Engagements & Research Track",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
       "left": 20,
-      "right": 42,
+      "right": 50,
       "textLeft": 20,
-      "textRight": 42,
+      "textRight": 50,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1921,20 +2029,20 @@
      {
       "sel": "section#contact.section.contact-section",
       "tag": "section",
-      "top": 14798,
-      "height": 685,
-      "words": 42,
+      "top": 17508,
+      "height": 745,
+      "words": 41,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Let's Connect.",
-       "size": 26,
+       "size": 25,
        "tag": "h2"
       },
-      "left": 42,
-      "right": 42,
-      "textLeft": 42,
-      "textRight": 42,
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 41,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1944,7 +2052,7 @@
      {
       "sel": "footer.site-footer",
       "tag": "footer",
-      "top": 15484,
+      "top": 18253,
       "height": 226,
       "words": 30,
       "media": 0,
@@ -1964,8 +2072,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Health Economics & Systems Engineering.",
-      "size": 34,
+      "text": "Health Economics & Applied Systems.",
+      "size": 30,
       "top": 181,
       "firstScreen": true
      }
@@ -1974,14 +2082,14 @@
     "edges": [
      {
       "x": 50,
-      "n": 33
+      "n": 40
      },
      {
       "x": 20,
-      "n": 12
+      "n": 15
      }
     ],
-    "leftBlocks": 45,
+    "leftBlocks": 55,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -1996,16 +2104,6 @@
  "findings": [
   {
    "level": "WARN",
-   "id": "card-rows",
-   "width": 1440,
-   "message": "2 rows of identical boxed cards.",
-   "fix": "Vary the composition; not every section is a card grid.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "WARN",
    "id": "no-footage",
    "width": 1440,
    "message": "No video anywhere on the page.",
@@ -2015,8 +2113,15 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 172px on the left, 212px on the right, at 1440px.",
+   "message": "The margins differ: 172px on the left, 210px on the right, at 1440px.",
    "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 390,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
   }
  ],
  "images": [

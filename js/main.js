@@ -18,7 +18,6 @@ function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const htmlRoot = document.documentElement;
 
-  // Retrieve saved theme or default to dark
   const savedTheme = localStorage.getItem('ih_theme') || 'dark';
   htmlRoot.setAttribute('data-theme', savedTheme);
 
@@ -84,6 +83,25 @@ function initProjectFilters() {
 
 /* --- 4. Interactive Project & Research Modals --- */
 const modalData = {
+  'modal-ssb': {
+    title: 'Sugar-Sweetened Beverage (SSB) Taxation & Policy Initiative',
+    tag: 'Flagship Health Policy Research • ARK Foundation',
+    content: `
+      <p class="modal-body-text">
+        At <strong>ARK Foundation</strong> (serving as Research Assistant from Oct 2025 to Present), I conduct empirical research evaluating fiscal taxation, front-of-pack labeling (FoPL), and consumer behavioral demand across sugar-sweetened beverages in Bangladesh.
+      </p>
+      <h4 class="modal-section-title">The Three Core Workstreams</h4>
+      <ul class="track-list" style="margin-bottom: 20px;">
+        <li><strong>1. National Household Survey:</strong> Designing, auditing, and executing structured digital survey questionnaires via KoboToolbox to estimate consumer purchasing habits and household demand elasticities.</li>
+        <li><strong>2. Food-EPI Policy Review Paper:</strong> Evaluating government implementation benchmarks against international Food-EPI standards. <em>(Full paper currently in progress)</em>.</li>
+        <li><strong>3. Nutritional Pack Analysis Paper:</strong> Comprehensive laboratory and packaging compliance evaluation assessing nutrient declaration fidelity and health risk scores. <em>(Full paper currently in progress)</em>.</li>
+      </ul>
+      <h4 class="modal-section-title">Publications & Policy Impact</h4>
+      <p class="modal-body-text">
+        One national policy brief has been successfully published, with a second policy brief in active preparation, directly informing legislative stakeholders on tiered excise taxation.
+      </p>
+    `
+  },
   'modal-bdepaper': {
     title: 'BD E-Paper Hub (Runner E-Paper)',
     tag: 'Production Mobile Architecture • Flutter & Dart',
@@ -91,9 +109,9 @@ const modalData = {
       <p class="modal-body-text">
         <strong>BD E-Paper Hub</strong> is a dedicated mobile application engineered to provide seamless, centralized access to daily editions of prominent national and regional newspapers across Bangladesh.
       </p>
-      <h4 class="modal-section-title">Key Architectural Features</h4>
+      <h4 class="modal-section-title">Architectural Features</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Layered Clean Architecture:</strong> Clear separation between UI screens, domain models, network repositories, and local storage services.</li>
+        <li><strong>Layered Clean Architecture:</strong> Clean separation between UI screens, domain models, network repositories, and local storage services.</li>
         <li><strong>Native WebView & Raster Pipeline:</strong> Optimized memory allocation handling multi-megabyte daily newspaper graphics and touch pan-and-zoom gestures.</li>
         <li><strong>Offline Bookmarking:</strong> Integrated shared preferences and local disk cache allowing users to save and revisit specific editions without recurring data fetches.</li>
         <li><strong>Production Artifacts:</strong> Deployed as signed release APKs and Android App Bundles (AAB) with automated Gradle builds.</li>
@@ -107,52 +125,16 @@ const modalData = {
       </p>
     `
   },
-  'modal-ssb': {
-    title: 'Sugar-Sweetened Beverage (SSB) Packaging Risk & Compliance',
-    tag: 'Empirical Health Economics • ARK Foundation & WHO',
-    content: `
-      <p class="modal-body-text">
-        In collaboration with <strong>ARK Foundation</strong> and WHO non-communicable disease (NCD) initiatives, this research evaluates regulatory compliance, nutritional declaration fidelity, and health risk labeling across commercially sold sugar-sweetened beverages in Bangladesh.
-      </p>
-      <h4 class="modal-section-title">Methodological Highlights</h4>
-      <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Front-of-Pack Labeling (FoPL) Audit:</strong> Comprehensive product cataloging utilizing the international Food-EPI benchmark framework.</li>
-        <li><strong>Risk Scoring & Association:</strong> Formulated compliance risk matrices evaluated via separate Ordinary Least Squares (OLS) regressions to estimate manufacturer non-adherence predictors.</li>
-        <li><strong>Field Survey Protocol:</strong> Managed structured household survey design and digital questionnaire integration via KoboToolbox.</li>
-      </ul>
-      <h4 class="modal-section-title">Policy Relevance</h4>
-      <p class="modal-body-text">
-        Provides empirical support for tiered taxation policies on high-sugar beverages to curtail expanding cardiometabolic disease prevalence.
-      </p>
-    `
-  },
-  'modal-climate': {
-    title: "Women's Digital Access & Last-Mile Climate Hazard Warnings",
-    tag: 'Climate Resilience & Demography • Working Paper',
-    content: `
-      <p class="modal-body-text">
-        This scholarly inquiry investigates the structural and socio-cultural barriers that restrict women's direct access to mobile phones and digital emergency broadcasts during tropical cyclones, storm surges, and riverine floods in rural Bangladesh.
-      </p>
-      <h4 class="modal-section-title">Empirical Evidence & Methods</h4>
-      <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Gender Digital Divide:</strong> Examines intra-household phone control and early warning reception asymmetry.</li>
-        <li><strong>Spatial Disaster Vulnerability:</strong> Evaluates last-mile transmission efficacy across coastal districts vulnerable to climate shocks.</li>
-        <li><strong>Typeset Manuscript:</strong> Fully prepared and documented with complete econometric specifications and LaTeX typesetting.</li>
-      </ul>
-      <h4 class="modal-section-title">Suggested Citation</h4>
-      <div class="modal-cite-block">Hasan, I. (2026). Women's Digital Access and Last-Mile Climate Hazard Warnings in Bangladesh. Working Paper. Dhaka, Bangladesh.</div>
-    `
-  },
   'modal-child-nutrition': {
     title: 'Child Undernutrition Anthropometric Modeling (BDHS 2022)',
-    tag: 'Demographic & Microdata Analysis • R & Econometrics',
+    tag: "Master's Thesis Research • North South University (NSU)",
     content: `
       <p class="modal-body-text">
-        A rigorous microdata investigation examining the maternal, environmental, and socio-economic determinants of child undernutrition in Bangladesh using the 2022 Bangladesh Demographic and Health Survey (BDHS).
+        Developed as my <strong>Master's Thesis Project</strong> under the Computational Sciences program at North South University.
       </p>
-      <h4 class="modal-section-title">Analytical Workflow</h4>
+      <h4 class="modal-section-title">Analytical Pipeline & Methods</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Sample Harmonization:</strong> Processed and standardized individual records for 8,500+ children under five years of age.</li>
+        <li><strong>Sample Harmonization:</strong> Processed and standardized individual microdata records for 8,500+ children under five years of age from the 2022 Bangladesh Demographic and Health Survey.</li>
         <li><strong>WHO Growth Standards:</strong> Calculated anthropometric Z-scores for Height-for-Age (HAZ - Stunting), Weight-for-Age (WAZ - Underweight), and Weight-for-Height (WHZ - Wasting).</li>
         <li><strong>Econometric Modeling:</strong> Employed multivariate regression controlling for mother's educational attainment, WASH infrastructure, household wealth indices, and geographical divisions.</li>
         <li><strong>Reproducible Codebook:</strong> Implemented with an isolated R environment (<code>renv</code>) ensuring 100% computational reproducibility.</li>
@@ -161,32 +143,44 @@ const modalData = {
   },
   'modal-hpc': {
     title: 'Parallel Simulated Annealing on HPC & GPU Architectures',
-    tag: 'High-Performance Computing • C, OpenMP & CUDA',
+    tag: 'High-Performance Computing • North South University',
     content: `
       <p class="modal-body-text">
-        Exploration of algorithmic parallelization for combinatorial optimization problems using multi-core CPUs and GPU clusters.
+        Conducted under the <strong>HPC Project</strong> within the graduate Computational Sciences program at North South University.
       </p>
       <h4 class="modal-section-title">Technical Implementation</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Asynchronous Cooling Schedules:</strong> Overcame traditional sequential dependencies of Markov chain annealing by parallelizing candidate neighborhood evaluations.</li>
-        <li><strong>CUDA Kernel Acceleration:</strong> Offloaded matrix cost calculations to CUDA threads, achieving substantial execution speedup over serial C baselines.</li>
-        <li><strong>Performance Benchmarks:</strong> Profiled memory throughput, synchronization overheads, and convergence accuracy.</li>
+        <li><strong>Combinatorial Search Parallelization:</strong> Overcame traditional sequential dependencies of Markov chain annealing by parallelizing candidate neighborhood evaluations in C and OpenMP.</li>
+        <li><strong>CUDA Kernel Acceleration:</strong> Offloaded matrix cost calculations to CUDA threads, achieving substantial execution speedup over serial baselines.</li>
+        <li><strong>Benchmarking:</strong> Profiled memory throughput, thread synchronization overheads, and convergence accuracy on compute clusters.</li>
       </ul>
     `
   },
-  'modal-regional-policy': {
-    title: 'Comparative NCD Regulatory Frameworks Across South Asia',
-    tag: 'Institutional Health Policy • South Asian Synthesis',
+  'modal-steps': {
+    title: 'STEPS 2022 Physical Activity & NCD Risk Analysis',
+    tag: 'Epidemiological Surveillance • Paper in Progress',
     content: `
       <p class="modal-body-text">
-        Cross-national comparative policy matrix analyzing food marketing restrictions, nutritional labeling regulations, and fiscal taxation instruments across five South Asian economies: Bangladesh, India, Pakistan, Sri Lanka, and Nepal.
+        Quantitative public health analysis evaluating population-level physical activity patterns, sedentary lifestyles, and cardiometabolic risk factors using the official <strong>STEPS 2022</strong> national survey dataset in Bangladesh. <em>(Full paper currently in preparation)</em>.
       </p>
-      <h4 class="modal-section-title">Key Insights</h4>
-      <ul class="track-list" style="margin-bottom: 20px;">
-        <li>Identifies legislative bottlenecks in front-of-pack warning labels across SAARC nations.</li>
-        <li>Compares enforcement mechanisms between federal and subnational regulatory agencies.</li>
-        <li>Synthesizes multi-stakeholder policy priorities for non-communicable disease prevention.</li>
-      </ul>
+    `
+  },
+  'modal-minitablets': {
+    title: 'Pediatric Mini-Tablets Formulation Acceptability Study',
+    tag: 'Clinical Pharmacology & Compliance • Paper in Progress',
+    content: `
+      <p class="modal-body-text">
+        Investigating age-stratified swallowability, compliance, and clinical acceptability of oral mini-tablet formulations among pediatric and juvenile patient cohorts adhering to international ICH E11 guidelines. <em>(Full paper currently in preparation)</em>.
+      </p>
+    `
+  },
+  'modal-climate': {
+    title: "Digital Inequality & Climate Hazard Warnings in Bangladesh",
+    tag: 'Climate Resilience & Demography • Research Abstract',
+    content: `
+      <p class="modal-body-text">
+        An exploratory research inquiry analyzing structural gender disparities in mobile phone ownership, literacy, and early warning broadcast dissemination across coastal districts during tropical cyclones and storm surges.
+      </p>
     `
   }
 };
