@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initClipboardButtons();
   initScrollSpy();
   updateCurrentYear();
+  initAmbientSpotlight();
+  initMagneticHoverPills();
 });
 
 /* --- 1. Theme Management (Dark / Light) --- */
@@ -77,6 +79,9 @@ function initProjectFilters() {
           card.style.display = 'none';
         }
       });
+
+      const quietListPill = document.querySelector('.quiet-list .sliding-hover-pill');
+      if (quietListPill) quietListPill.style.opacity = '0';
     });
   });
 }
@@ -250,14 +255,14 @@ function initModals() {
   });
 }
 
-/* --- 5. Clipboard Copy with Toast Feedback --- */
+/* --- 5. Clipboard Copy with Tactile Morph Feedback --- */
 function initClipboardButtons() {
   const emailButtons = document.querySelectorAll('.copy-email-btn');
   emailButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const email = btn.getAttribute('data-email') || 'ibrahimhasanzafar@gmail.com';
-      copyToClipboard(email, 'Email copied to clipboard!');
+      copyToClipboard(email, 'Email copied to clipboard!', btn);
     });
   });
 
@@ -266,23 +271,36 @@ function initClipboardButtons() {
     btn.addEventListener('click', () => {
       const citation = btn.getAttribute('data-cite');
       if (citation) {
-        copyToClipboard(citation, 'APA citation copied to clipboard!');
+        copyToClipboard(citation, 'APA citation copied to clipboard!', btn);
       }
     });
   });
 }
 
-function copyToClipboard(text, successMessage) {
+function copyToClipboard(text, successMessage, triggerBtn) {
+  const onCopiedSuccess = () => {
+    showToast(successMessage);
+    if (triggerBtn) {
+      triggerBtn.classList.add('copied');
+      const textSpan = triggerBtn.querySelector('.copy-btn-text');
+      const originalText = textSpan ? textSpan.textContent : '';
+      if (textSpan) textSpan.textContent = 'Copied!';
+
+      setTimeout(() => {
+        triggerBtn.classList.remove('copied');
+        if (textSpan) textSpan.textContent = originalText;
+      }, 2000);
+    }
+  };
+
   if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(text).then(() => {
-      showToast(successMessage);
-    }).catch(() => fallbackCopy(text, successMessage));
+    navigator.clipboard.writeText(text).then(onCopiedSuccess).catch(() => fallbackCopy(text, successMessage, triggerBtn));
   } else {
-    fallbackCopy(text, successMessage);
+    fallbackCopy(text, successMessage, triggerBtn);
   }
 }
 
-function fallbackCopy(text, successMessage) {
+function fallbackCopy(text, successMessage, triggerBtn) {
   const tempInput = document.createElement('textarea');
   tempInput.value = text;
   tempInput.style.position = 'fixed';
@@ -292,6 +310,17 @@ function fallbackCopy(text, successMessage) {
   try {
     document.execCommand('copy');
     showToast(successMessage);
+    if (triggerBtn) {
+      triggerBtn.classList.add('copied');
+      const textSpan = triggerBtn.querySelector('.copy-btn-text');
+      const originalText = textSpan ? textSpan.textContent : '';
+      if (textSpan) textSpan.textContent = 'Copied!';
+
+      setTimeout(() => {
+        triggerBtn.classList.remove('copied');
+        if (textSpan) textSpan.textContent = originalText;
+      }, 2000);
+    }
   } catch (err) {
     showToast('Failed to copy text.');
   }
@@ -346,3 +375,68 @@ function updateCurrentYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
+/* --- 8. Ambient Desktop Spotlight (Emil Kowalski Widescreen Atmosphere) --- */
+function initAmbientSpotlight() {
+  const spotlight = document.getElementById('ambient-spotlight');
+  if (!spotlight) return;
+
+  if (window.matchMedia('(pointer: coarse)').matches) return;
+
+  let rafId = null;
+
+  window.addEventListener('mousemove', (e) => {
+    if (!rafId) {
+      rafId = requestAnimationFrame(() => {
+        document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+        document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+        rafId = null;
+      });
+    }
+  }, { passive: true });
+}
+
+/* --- 9. Magnetic Sliding Hover Pill (Emil Kowalski Physics) --- */
+function initMagneticHoverPills() {
+  if (window.matchMedia('(pointer: coarse)').matches) return;
+
+  const listContainers = document.querySelectorAll('.quiet-list, .trajectory-list');
+
+  listContainers.forEach(container => {
+    container.classList.add('has-magnetic-pill');
+
+    let pill = container.querySelector('.sliding-hover-pill');
+    if (!pill) {
+      pill = document.createElement('div');
+      pill.className = 'sliding-hover-pill';
+      pill.setAttribute('aria-hidden', 'true');
+      container.insertBefore(pill, container.firstChild);
+    }
+
+    const interactiveItems = container.querySelectorAll('.quiet-item, .trajectory-item, .channel-row');
+
+    interactiveItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        if (item.offsetParent === null) return;
+
+        const cRect = container.getBoundingClientRect();
+        const iRect = item.getBoundingClientRect();
+
+        const x = iRect.left - cRect.left;
+        const y = iRect.top - cRect.top;
+        const w = iRect.width;
+        const h = iRect.height;
+
+        pill.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        pill.style.width = `${w}px`;
+        pill.style.height = `${h}px`;
+        pill.style.opacity = '1';
+      });
+    });
+
+    container.addEventListener('mouseleave', () => {
+      pill.style.opacity = '0';
+    });
+  });
+}
+
