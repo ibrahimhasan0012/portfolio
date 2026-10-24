@@ -86,7 +86,7 @@ function initProjectFilters() {
   });
 }
 
-/* --- 4. Interactive Project & Research Modals --- */
+/* --- 4. Interactive Project & Research Modals with Publication Diagrams --- */
 const modalData = {
   'modal-ssb': {
     title: 'Sugar-Sweetened Beverage (SSB) Taxation & Policy Initiative',
@@ -95,13 +95,63 @@ const modalData = {
       <p class="modal-body-text">
         At <strong>ARK Foundation</strong> (serving as Research Assistant from Oct 2025 to Present), I conduct empirical research evaluating fiscal taxation, front-of-pack labeling (FoPL), and consumer behavioral demand across sugar-sweetened beverages in Bangladesh.
       </p>
+
+      <!-- Diagram Design: Empirical & Policy Pipeline -->
+      <div class="methodology-diagram-wrap">
+        <div class="diagram-header">
+          <span class="diagram-header-tag">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Research &amp; Policy Pipeline
+          </span>
+          <span>ARK Foundation</span>
+        </div>
+        <svg class="diagram-svg" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="marker-arrow-ssb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(148, 163, 184, 0.6)"/>
+            </marker>
+          </defs>
+          <!-- Stage 1 Inputs -->
+          <rect x="10" y="20" width="145" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="22" y="38" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / FIELD SURVEY</text>
+          <text x="22" y="54" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Household Survey</text>
+          <text x="22" y="68" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">KoboToolbox • 8 Divisions</text>
+
+          <rect x="10" y="100" width="145" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="22" y="118" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / PACK AUDIT</text>
+          <text x="22" y="134" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Nutritional Audit</text>
+          <text x="22" y="148" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">FoPL • Sugar Compliance</text>
+
+          <!-- Connectors 1 -> 2 -->
+          <path d="M 155 50 L 195 75" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
+          <path d="M 155 130 L 195 105" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
+
+          <!-- Stage 2 Analysis -->
+          <rect x="200" y="45" width="150" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="214" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--accent-emerald)" font-weight="600">02 / ANALYSIS</text>
+          <text x="214" y="84" font-family="var(--font-sans)" font-size="11.5" fill="var(--ink-primary)" font-weight="600">Econometric Modeling</text>
+          <text x="214" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Demand Elasticities</text>
+          <text x="214" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Food-EPI Benchmark</text>
+
+          <!-- Connectors 2 -> 3 -->
+          <path d="M 350 90 L 385 90" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
+
+          <!-- Stage 3 Output -->
+          <rect x="390" y="45" width="120" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--accent-blue)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <text x="404" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">03 / POLICY IMPACT</text>
+          <text x="404" y="84" font-family="var(--font-sans)" font-size="11.5" fill="var(--ink-primary)" font-weight="600">Policy Briefs</text>
+          <text x="404" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">NBR / MoF Briefing</text>
+          <text x="404" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">2 Working Papers</text>
+        </svg>
+      </div>
+
       <h4 class="modal-section-title">The Three Core Workstreams</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
         <li><strong>1. National Household Survey:</strong> Designing, auditing, and executing structured digital survey questionnaires via KoboToolbox to estimate consumer purchasing habits and household demand elasticities.</li>
         <li><strong>2. Food-EPI Policy Review Paper:</strong> Evaluating government implementation benchmarks against international Food-EPI standards. <em>(Full paper currently in progress)</em>.</li>
         <li><strong>3. Nutritional Pack Analysis Paper:</strong> Comprehensive laboratory and packaging compliance evaluation assessing nutrient declaration fidelity and health risk scores. <em>(Full paper currently in progress)</em>.</li>
       </ul>
-      <h4 class="modal-section-title">Publications & Policy Impact</h4>
+      <h4 class="modal-section-title">Publications &amp; Policy Impact</h4>
       <p class="modal-body-text">
         One national policy brief has been successfully published, with a second policy brief in active preparation, directly informing legislative stakeholders on tiered excise taxation.
       </p>
@@ -114,17 +164,62 @@ const modalData = {
       <p class="modal-body-text">
         <strong>BD E-Paper Hub</strong> is a dedicated mobile application engineered to provide seamless, centralized access to daily editions of prominent national and regional newspapers across Bangladesh.
       </p>
+
+      <!-- Diagram Design: Mobile Architecture -->
+      <div class="methodology-diagram-wrap">
+        <div class="diagram-header">
+          <span class="diagram-header-tag">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Mobile Architecture &amp; Delivery
+          </span>
+          <span>Flutter &amp; Dart</span>
+        </div>
+        <svg class="diagram-svg" viewBox="0 0 520 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="marker-arrow-flutter" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(148, 163, 184, 0.6)"/>
+            </marker>
+          </defs>
+          <!-- Stage 1 -->
+          <rect x="10" y="40" width="120" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="22" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / MANIFESTS</text>
+          <text x="22" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Multi-Publisher</text>
+          <text x="22" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">National &amp; Regional</text>
+          <text x="22" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Newspaper Feeds</text>
+
+          <!-- Connector 1->2 -->
+          <path d="M 130 80 L 160 80" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-flutter)"/>
+
+          <!-- Stage 2 -->
+          <rect x="165" y="40" width="145" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="178" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-emerald)" font-weight="600">02 / ARCHITECTURE</text>
+          <text x="178" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Clean Architecture</text>
+          <text x="178" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Raster WebView Engine</text>
+          <text x="178" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Disk &amp; Memory Cache</text>
+
+          <!-- Connector 2->3 -->
+          <path d="M 310 80 L 340 80" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-flutter)"/>
+
+          <!-- Stage 3 -->
+          <rect x="345" y="40" width="165" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--accent-blue)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <text x="358" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">03 / ARTIFACTS</text>
+          <text x="358" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Production Build</text>
+          <text x="358" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Release APK &amp; AAB</text>
+          <text x="358" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Automated Gradle</text>
+        </svg>
+      </div>
+
       <h4 class="modal-section-title">Architectural Features</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
         <li><strong>Layered Clean Architecture:</strong> Clean separation between UI screens, domain models, network repositories, and local storage services.</li>
-        <li><strong>Native WebView & Raster Pipeline:</strong> Optimized memory allocation handling multi-megabyte daily newspaper graphics and touch pan-and-zoom gestures.</li>
+        <li><strong>Native WebView &amp; Raster Pipeline:</strong> Optimized memory allocation handling multi-megabyte daily newspaper graphics and touch pan-and-zoom gestures.</li>
         <li><strong>Offline Bookmarking:</strong> Integrated shared preferences and local disk cache allowing users to save and revisit specific editions without recurring data fetches.</li>
         <li><strong>Production Artifacts:</strong> Deployed as signed release APKs and Android App Bundles (AAB) with automated Gradle builds.</li>
       </ul>
       <h4 class="modal-section-title">Open Source Repository</h4>
       <p class="modal-body-text">
         Public codebase and release details available at: <br>
-        <a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer" style="color: var(--accent-text); font-weight: 600;">
+        <a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); font-weight: 600;">
           github.com/ibrahimhasan0012/runner-epaper
         </a>
       </p>
@@ -137,7 +232,52 @@ const modalData = {
       <p class="modal-body-text">
         Developed as my <strong>Master's Thesis Project</strong> under the Computational Sciences program at North South University.
       </p>
-      <h4 class="modal-section-title">Analytical Pipeline & Methods</h4>
+
+      <!-- Diagram Design: Econometric Pipeline -->
+      <div class="methodology-diagram-wrap">
+        <div class="diagram-header">
+          <span class="diagram-header-tag">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Econometric Pipeline
+          </span>
+          <span>NSU Computational Sciences</span>
+        </div>
+        <svg class="diagram-svg" viewBox="0 0 520 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="marker-arrow-bdhs" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(148, 163, 184, 0.6)"/>
+            </marker>
+          </defs>
+          <!-- Stage 1 -->
+          <rect x="10" y="40" width="115" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="22" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / MICRODATA</text>
+          <text x="22" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">BDHS 2022</text>
+          <text x="22" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">N = 8,500+ Children</text>
+          <text x="22" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">KR Microdata Files</text>
+
+          <!-- Connector 1->2 -->
+          <path d="M 125 80 L 155 80" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-bdhs)"/>
+
+          <!-- Stage 2 -->
+          <rect x="160" y="40" width="130" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="172" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-emerald)" font-weight="600">02 / STANDARDS</text>
+          <text x="172" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">WHO Anthro 2006</text>
+          <text x="172" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">HAZ, WAZ, WHZ</text>
+          <text x="172" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Z-score &lt; -2 SD</text>
+
+          <!-- Connector 2->3 -->
+          <path d="M 290 80 L 320 80" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-bdhs)"/>
+
+          <!-- Stage 3 -->
+          <rect x="325" y="40" width="185" height="80" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--accent-blue)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <text x="338" y="60" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">03 / ESTIMATION &amp; CODE</text>
+          <text x="338" y="78" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Multivariate Logit</text>
+          <text x="338" y="94" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Maternal / WASH Covariates</text>
+          <text x="338" y="108" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">R / renv Reproducible</text>
+        </svg>
+      </div>
+
+      <h4 class="modal-section-title">Analytical Pipeline &amp; Methods</h4>
       <ul class="track-list" style="margin-bottom: 20px;">
         <li><strong>Sample Harmonization:</strong> Processed and standardized individual microdata records for 8,500+ children under five years of age from the 2022 Bangladesh Demographic and Health Survey.</li>
         <li><strong>WHO Growth Standards:</strong> Calculated anthropometric Z-scores for Height-for-Age (HAZ - Stunting), Weight-for-Age (WAZ - Underweight), and Weight-for-Height (WHZ - Wasting).</li>
@@ -153,12 +293,56 @@ const modalData = {
       <p class="modal-body-text">
         Conducted under the <strong>HPC Project</strong> within the graduate Computational Sciences program at North South University.
       </p>
-      <h4 class="modal-section-title">Technical Implementation</h4>
-      <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>Combinatorial Search Parallelization:</strong> Overcame traditional sequential dependencies of Markov chain annealing by parallelizing candidate neighborhood evaluations in C and OpenMP.</li>
-        <li><strong>CUDA Kernel Acceleration:</strong> Offloaded matrix cost calculations to CUDA threads, achieving substantial execution speedup over serial baselines.</li>
-        <li><strong>Benchmarking:</strong> Profiled memory throughput, thread synchronization overheads, and convergence accuracy on compute clusters.</li>
-      </ul>
+
+      <!-- Diagram Design: HPC Architecture -->
+      <div class="methodology-diagram-wrap">
+        <div class="diagram-header">
+          <span class="diagram-header-tag">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Parallel Compute Architecture
+          </span>
+          <span>NSU HPC Project</span>
+        </div>
+        <svg class="diagram-svg" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="marker-arrow-hpc" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(148, 163, 184, 0.6)"/>
+            </marker>
+          </defs>
+          <!-- Stage 1 -->
+          <rect x="10" y="45" width="125" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="22" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--ink-faint)" font-weight="600">01 / SERIAL BASELINE</text>
+          <text x="22" y="84" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Markov Annealing</text>
+          <text x="22" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Sequential Chain</text>
+          <text x="22" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Cost Evaluation Bottleneck</text>
+
+          <!-- Connectors 1 -> 2 -->
+          <path d="M 135 70 L 175 55" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-hpc)"/>
+          <path d="M 135 110 L 175 125" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-hpc)"/>
+
+          <!-- Stage 2 Split -->
+          <rect x="180" y="20" width="165" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="194" y="38" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">02 / HOST (CPU / OpenMP)</text>
+          <text x="194" y="54" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Candidate Search</text>
+          <text x="194" y="68" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Multi-core Thread Pool</text>
+
+          <rect x="180" y="100" width="165" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
+          <text x="194" y="118" font-family="var(--font-mono)" font-size="9" fill="var(--accent-emerald)" font-weight="600">02 / DEVICE (GPU / CUDA)</text>
+          <text x="194" y="134" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Matrix Cost Kernels</text>
+          <text x="194" y="148" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Massive Thread Grids</text>
+
+          <!-- Connectors 2 -> 3 -->
+          <path d="M 345 50 L 385 75" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-hpc)"/>
+          <path d="M 345 130 L 385 105" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-hpc)"/>
+
+          <!-- Stage 3 Output -->
+          <rect x="390" y="45" width="120" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--accent-blue)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <text x="404" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">03 / RESULTS</text>
+          <text x="404" y="84" font-family="var(--font-sans)" font-size="11.5" fill="var(--ink-primary)" font-weight="600">Profiling</text>
+          <text x="404" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Substantial Speedup</text>
+          <text x="404" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Overhead Analysis</text>
+        </svg>
+      </div>
     `
   },
   'modal-steps': {

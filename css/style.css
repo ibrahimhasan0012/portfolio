@@ -917,6 +917,43 @@ code, pre {
   line-height: 1.55;
 }
 
+/* --- Diagram Design (cathrynlavery/diagram-design Standards) --- */
+.methodology-diagram-wrap {
+  margin: 18px 0;
+  padding: 16px 18px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.diagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.diagram-header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+
+.diagram-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 480px;
+}
+
 /* --- Toast Notification --- */
 .toast-container {
   position: fixed;
