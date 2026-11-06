@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
+  <style>html{background-color:#f7f5f0}html[data-theme="dark"]{background-color:#17161a}</style>
+  <script>try{const savedTheme=localStorage.getItem('ih_theme');if(savedTheme==='dark'||savedTheme==='light')document.documentElement.setAttribute('data-theme',savedTheme)}catch{}</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ibrahim Hasan — Health Economist & Computational Systems Engineer</title>
+  <title>About Ibrahim Hasan — Economics, Research &amp; Building</title>
   <meta name="description" content="Ibrahim Hasan. Quantitative Health Researcher at ARK Foundation and M.S. Computational Sciences student at North South University. B.S.S. Economics from University of Dhaka.">
   <meta name="author" content="Ibrahim Hasan">
   <meta name="keywords" content="Ibrahim Hasan, Health Economics, Public Health, Econometrics, Flutter Developer, Bangladesh, BDHS, SSB Policy, HPC, North South University, University of Dhaka">
@@ -16,12 +18,12 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,500;1,9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=2.5">
+  <link rel="stylesheet" href="css/style.css?v=7.18">
 </head>
-<body>
+<body data-page="about">
   <!-- Ambient Desktop Spotlight Layer (Emil Kowalski Widescreen Atmosphere) -->
   <div class="ambient-spotlight" id="ambient-spotlight" aria-hidden="true"></div>
 
@@ -29,13 +31,18 @@
     <!-- Top Header -->
     <header class="site-header">
       <div class="header-row">
-        <div class="brand-wrap">
-          <span class="brand-name">Ibrahim Hasan</span>
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span>ARK Foundation • NSU</span>
-          </div>
+        <div class="brand-mark">
+          <img src="assets/ibrahim-hasan-avatar.jpg" alt="Ibrahim Hasan" width="44" height="44">
         </div>
+
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="site-nav-link" href="index.html" data-page-link="about" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-1.5a7 7 0 0 1 14 0V20"/></svg><span>About</span></a>
+          <a class="site-nav-link" href="education.html" data-page-link="education"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 2v5c3 3 9 3 12 0v-5m4-2v6"/></svg><span>Education</span></a>
+          <a class="site-nav-link" href="work.html" data-page-link="work"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M3 12h18m-9 0v2"/></svg><span>Work</span></a>
+          <a class="site-nav-link" href="skills.html" data-page-link="skills"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5"/><circle cx="15" cy="17" r="2.5"/></svg><span>Skills</span></a>
+          <a class="site-nav-link" href="contact.html" data-page-link="contact"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span>Contact</span></a>
+        </nav>
 
         <div class="header-actions">
           <!-- Theme Toggle -->
@@ -55,46 +62,34 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
-
-          <!-- CV Download -->
-          <a href="assets/Ibrahim_Hasan_CV.pdf" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Download CV (PDF)" aria-label="Download Curriculum Vitae">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="12" y1="18" x2="12" y2="12"></line>
-              <line x1="9" y1="15" x2="12" y2="18"></line>
-              <line x1="15" y1="15" x2="12" y2="18"></line>
-            </svg>
+<!-- Send Email -->
+          <a class="icon-btn" href="mailto:ibrahimhasanzafar@gmail.com" title="Send an email" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>
           </a>
-
-          <!-- Email Copy -->
-          <button class="icon-btn copy-email-btn" data-email="ibrahimhasanzafar@gmail.com" title="Copy Email Address" aria-label="Copy Email Address">
-            <svg class="icon-copy" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--accent-emerald)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </button>
         </div>
       </div>
     </header>
 
     <main>
       <!-- Hero / Bio -->
-      <section class="hero-section" id="hero">
-        <h1 class="hero-title">
-          Health Economics &amp; <br>
-          <span class="text-muted">Computing Systems.</span>
-        </h1>
-
-        <p class="hero-bio">
-          I am <strong>Ibrahim Hasan</strong> — a Quantitative Researcher at <strong>ARK Foundation</strong> and graduate student in Computational Sciences &amp; Engineering at <strong>North South University</strong> (B.S.S. Economics, <strong>University of Dhaka</strong>). Grounded in empirical econometric evaluations, public health fiscal policy, and open-source software engineering.
-        </p>
-
-        <!-- Verified Quick Platform Links Strip -->
-        <div class="platform-links-strip">
+      <section class="portfolio-opening" id="hero">
+        <div class="opening-heading">
+          <h1>Ibrahim Hasan</h1>
+          <p class="opening-tagline">Curious about people. Driven to build.</p>
+        </div>
+        <div class="opening-aside">
+          <p>I work in health economics, computational research, and public-interest software.</p>
+          <a class="hero-profile-link page-step-source" href="education.html" data-next-page><strong>Know about my background</strong></a>
+          <figure class="page-art opening-art page-art--home" aria-hidden="true"><svg viewBox="0 0 460 280" focusable="false">
+  <path class="home-flow home-flow-outer" d="M22 155c66-103 143-120 212-69 52 38 94 94 168 60 28-13 47-39 62-63" fill="none" stroke="#e78a72" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 9"/>
+  <path class="home-flow home-flow-middle" d="M30 211c66-100 130-113 187-62 51 45 89 81 145 42 42-29 62-74 103-84" fill="none" stroke="#9b79d8" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="1 8"/>
+  <path class="home-flow home-flow-inner" d="M47 245c52-68 104-74 146-38 48 41 79 41 117 2 34-36 70-71 130-54" fill="none" stroke="#4bb4a2" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 8"/>
+  <circle class="home-flow-node home-flow-node-a" cx="22" cy="155" r="7" fill="#e78a72"/><circle class="home-flow-node home-flow-node-b" cx="322" cy="191" r="6" fill="#9b79d8"/><circle class="home-flow-node home-flow-node-c" cx="440" cy="155" r="7" fill="#4bb4a2"/>
+  <g fill="#b6a6cf" opacity=".72"><circle cx="96" cy="59" r="2.4"/><circle cx="109" cy="59" r="2.4"/><circle cx="122" cy="59" r="2.4"/><circle cx="96" cy="72" r="2.4"/><circle cx="109" cy="72" r="2.4"/><circle cx="122" cy="72" r="2.4"/></g>
+</svg></figure>
+        </div>
+      </section>
+      <div class="platform-links-strip opening-links">
           <a href="https://github.com/ibrahimhasan0012" target="_blank" rel="noopener noreferrer" class="platform-pill" title="GitHub Code Repositories">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             <span>GitHub</span>
@@ -124,355 +119,107 @@
             <span>Instagram</span>
           </a>
         </div>
-      </section>
 
-      <!-- Selected Works & Research (Quiet List Layout) -->
-      <section class="content-section" id="works">
-        <h2 class="section-label">
-          <span>Selected Works &amp; Research</span>
-          <span class="section-label-sub">2024 — Present</span>
-        </h2>
-
-        <div class="quiet-list">
-          <!-- Item 1: Sugar-Sweetened Beverage (SSB) Project -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">Sugar-Sweetened Beverage (SSB) Taxation &amp; Policy</h3>
-                <span class="item-tag">Health Economics • ARK Foundation</span>
-              </div>
-              <button class="details-trigger open-modal-btn" data-modal="modal-ssb">Details &rarr;</button>
-            </div>
-            <p class="item-desc">
-              National multi-component empirical evaluation investigating fiscal excise taxation, household demand elasticities, and front-of-pack labeling (FoPL) compliance across Bangladesh. Co-authoring two active research papers and published policy briefs.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">Econometrics</span>
-                <span class="tech-dot-label">Household Survey</span>
-                <span class="tech-dot-label">Food-EPI</span>
-                <span class="tech-dot-label">Policy Briefs</span>
-                <span class="tech-dot-label">KoboToolbox</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 2: Runner (রানার) — BD E-Paper Hub -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">
-                  <a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer" class="item-title-link">
-                    <span>Runner (রানার) — BD E-Paper Hub</span>
-                    <svg viewBox="0 0 20 20" width="13" height="13" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-                  </a>
-                </h3>
-                <span class="item-tag">Flutter Mobile • Open Source</span>
-              </div>
-              <div class="item-actions">
-                <button class="details-trigger open-modal-btn" data-modal="modal-bdepaper">Architecture &rarr;</button>
-              </div>
-            </div>
-            <p class="item-desc">
-              Bangladeshi newspaper e-paper reader engineered with Flutter 3.x for Android &amp; iOS. Features high-resolution raster rendering, publication switching, offline caching, and clean architecture.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">Flutter 3.x</span>
-                <span class="tech-dot-label">Dart</span>
-                <span class="tech-dot-label">Android &amp; iOS</span>
-                <span class="tech-dot-label">Clean Architecture</span>
-              </div>
-              <a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer" class="link-btn">
-                <span>GitHub</span> &rarr;
-              </a>
-            </div>
-          </article>
-
-          <!-- Item 3: Child Undernutrition Thesis -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">Child Undernutrition Anthropometrics (BDHS 2022)</h3>
-                <span class="item-tag">Master's Thesis • North South University</span>
-              </div>
-              <button class="details-trigger open-modal-btn" data-modal="modal-child-nutrition">Details &rarr;</button>
-            </div>
-            <p class="item-desc">
-              Reproducible analytical pipeline cleaning, harmonizing, and analyzing 8,500+ child microdata records from the 2022 Bangladesh Demographic and Health Survey. Validated anthropometric Z-scores (HAZ, WAZ, WHZ) against official benchmarks.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">R (renv)</span>
-                <span class="tech-dot-label">BDHS Microdata</span>
-                <span class="tech-dot-label">Anthropometrics</span>
-                <span class="tech-dot-label">Econometric Modeling</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 4: Bangla PDF OCR Engine -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">
-                  <a href="https://github.com/ibrahimhasan0012/bangla-pdf-processor" target="_blank" rel="noopener noreferrer" class="item-title-link">
-                    <span>Bangla PDF OCR &amp; Extraction Engine</span>
-                    <svg viewBox="0 0 20 20" width="13" height="13" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-                  </a>
-                </h3>
-                <span class="item-tag">Document AI • Python</span>
-              </div>
-              <a href="https://github.com/ibrahimhasan0012/bangla-pdf-processor" target="_blank" rel="noopener noreferrer" class="link-btn">
-                <span>GitHub</span> &rarr;
-              </a>
-            </div>
-            <p class="item-desc">
-              High-fidelity Bengali PDF OCR and text extraction engine designed with agentic coding toolchains for bilingual document processing, tabular parsing, and scanned text extraction.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">Python</span>
-                <span class="tech-dot-label">Bangla OCR</span>
-                <span class="tech-dot-label">PDF Extraction</span>
-                <span class="tech-dot-label">AI Agent Skills</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 5: Pataghar (পাতাঘর) Newspaper Reader -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">
-                  <a href="https://github.com/ibrahimhasan0012/pataghar" target="_blank" rel="noopener noreferrer" class="item-title-link">
-                    <span>Pataghar (পাতাঘর) Newspaper Reader</span>
-                    <svg viewBox="0 0 20 20" width="13" height="13" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-                  </a>
-                </h3>
-                <span class="item-tag">Cross-Platform Reader • Flutter</span>
-              </div>
-              <a href="https://github.com/ibrahimhasan0012/pataghar" target="_blank" rel="noopener noreferrer" class="link-btn">
-                <span>GitHub</span> &rarr;
-              </a>
-            </div>
-            <p class="item-desc">
-              Clean digital newspaper reader for Android, iOS, and Web with responsive layout, touch zoom, publication selector, and automated edition archiving.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">Flutter</span>
-                <span class="tech-dot-label">Dart</span>
-                <span class="tech-dot-label">Web &amp; Mobile</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 6: Parallel Simulated Annealing HPC -->
-          <article class="quiet-item">
-            <div class="item-header">
-              <div class="item-title-group">
-                <h3 class="item-title">Parallel Simulated Annealing HPC (C / CUDA)</h3>
-                <span class="item-tag">Scientific Computing • NSU</span>
-              </div>
-              <button class="details-trigger open-modal-btn" data-modal="modal-hpc">Specs &rarr;</button>
-            </div>
-            <p class="item-desc">
-              Parallelized optimization algorithms developed in C, OpenMP, and CUDA for large-scale combinatorial search, asynchronous cooling schedules, and multi-core GPU speedup benchmarks.
-            </p>
-            <div class="item-footer">
-              <div class="item-tech-row">
-                <span class="tech-dot-label">C</span>
-                <span class="tech-dot-label">CUDA</span>
-                <span class="tech-dot-label">OpenMP</span>
-                <span class="tech-dot-label">Parallel Algorithms</span>
-              </div>
-            </div>
-          </article>
+      <!-- Work — one featured research project, with the rest revealed on demand -->
+      <section class="content-section portfolio-section work-section" id="works">
+        <div class="work-heading-line">
+          <span class="eyebrow">Selected work, 2024 to present</span>
+          <span class="eyebrow">Research and software</span>
         </div>
-      </section>
 
-      <!-- Trajectory (Experience & Education) -->
-      <section class="content-section" id="trajectory">
-        <h2 class="section-label">
-          <span>Trajectory</span>
-          <span class="section-label-sub">Experience &amp; Education</span>
-        </h2>
-
-        <div class="trajectory-list">
-          <!-- Role 1 -->
-          <div class="trajectory-item">
-            <span class="trajectory-period">2025 — Present</span>
-            <div>
-              <h3 class="trajectory-role">Research Assistant (Health Economics &amp; Policy)</h3>
-              <div class="trajectory-org">ARK Foundation, Bangladesh</div>
-              <p class="trajectory-desc">
-                Leading quantitative empirical analyses on the Sugar-Sweetened Beverage (SSB) policy project, national STEPS 2022 physical activity risk factors, and pediatric mini-tablet clinical acceptability studies.
-              </p>
-            </div>
+        <article class="ssb-feature">
+          <div class="ssb-feature-copy">
+            <div class="feature-meta"><span>Flagship research at ARK Foundation</span></div>
+            <h2>Sugar-sweetened beverages</h2>
+            <p>A three-part initiative: food-policy review, nutritional pack analysis, and household survey.</p>
+            <button class="feature-link open-modal-btn" data-modal="modal-ssb">Explore the research <span aria-hidden="true">↗</span></button>
           </div>
+          <figure class="ssb-feature-art">
+            <svg class="ssb-field-illustration" viewBox="0 0 520 252" role="img" aria-labelledby="ssb-illustration-title" focusable="false">
+              <title id="ssb-illustration-title">Food-policy review, pack analysis and household survey</title>
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle class="ssb-field-orbit" cx="367" cy="126" r="102"/>
+                <circle class="ssb-field-orbit" cx="367" cy="126" r="79"/>
+                <g class="ssb-field-strand ssb-field-policy">
+                  <path class="ssb-field-route" d="M112 54h54c60 0 74 48 123 61l20 6"/>
+                  <circle cx="79" cy="54" r="22"/>
+                  <path d="M74 43h8l5 5v17H71V43h3m8 0v6h5m-12 5h8m-8 5h8"/>
+                  <circle class="ssb-field-point" cx="199" cy="60" r="3.5"/>
+                </g>
+                <g class="ssb-field-strand ssb-field-pack">
+                  <path class="ssb-field-route" d="M112 126h196"/>
+                  <circle cx="79" cy="126" r="22"/>
+                  <path d="M69 120v-4h4m12 0h4v4m0 12v4h-4m-12 0h-4v-4m5-11v10m4-10v10m5-10v10"/>
+                  <circle class="ssb-field-point" cx="229" cy="126" r="3.5"/>
+                </g>
+                <g class="ssb-field-strand ssb-field-household">
+                  <path class="ssb-field-route" d="M112 198h54c60 0 74-48 123-61l20-6"/>
+                  <circle cx="79" cy="198" r="22"/>
+                  <path d="m67 197 12-10 12 10m-21-2v13h18v-13m-12 13v-6h6v6"/>
+                  <circle class="ssb-field-point" cx="199" cy="192" r="3.5"/>
+                </g>
+                <g class="ssb-field-bottle" transform="rotate(12 367 126)">
+                  <path class="ssb-bottle-body" d="M349 54h36v25c0 8 24 19 24 38v74c0 11-8 18-18 18h-48c-10 0-18-7-18-18v-74c0-19 24-30 24-38Z"/>
+                  <rect class="ssb-bottle-cap" x="345" y="41" width="44" height="14" rx="4"/>
+                  <path d="M352 47h30M339 195h56"/>
+                  <path class="ssb-bottle-label" d="M325 121h84v50h-84Z"/>
+                  <path d="M357 138h31m-31 8h22m-22 8h26"/>
+                  <circle cx="344" cy="146" r="4"/>
+                </g>
+              </g>
+            </svg>
+            <figcaption>How household evidence informs health policy</figcaption>
+          </figure>
+        </article>
 
-          <!-- Role 2 -->
-          <div class="trajectory-item">
-            <span class="trajectory-period">2025 — Present</span>
-            <div>
-              <h3 class="trajectory-role">M.S. in Computational Sciences &amp; Engineering</h3>
-              <div class="trajectory-org">North South University (NSU)</div>
-              <p class="trajectory-desc">
-                Graduate coursework in computational linear algebra, high-performance computing (HPC), numerical analysis, and mathematical simulation.
-              </p>
-            </div>
-          </div>
-
-          <!-- Role 3 -->
-          <div class="trajectory-item">
-            <span class="trajectory-period">Graduated 2025</span>
-            <div>
-              <h3 class="trajectory-role">B.S.S. in Economics (Undergraduate)</h3>
-              <div class="trajectory-org">University of Dhaka, Department of Economics</div>
-              <p class="trajectory-desc">
-                Core disciplines in theoretical and applied econometrics, health economics, microeconomics, macroeconomic policy, and quantitative statistical inference.
-              </p>
-            </div>
-          </div>
-
-          <!-- Role 4 -->
-          <div class="trajectory-item">
-            <span class="trajectory-period">2020 — Present</span>
-            <div>
-              <h3 class="trajectory-role">Academic Mentorship &amp; Pedagogy</h3>
-              <div class="trajectory-org">Independent &amp; Digital Education Platforms</div>
-              <p class="trajectory-desc">
-                Tutored 1,000+ students online in university economics and 50–100+ students in-person across secondary and higher-secondary STEM disciplines (Mathematics, Physics, Chemistry).
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Public Channels & Writing -->
-      <section class="content-section" id="channels">
-        <h2 class="section-label">
-          <span>Discourse &amp; Channels</span>
-          <span class="section-label-sub">Video Essays &amp; Dispatches</span>
-        </h2>
-
-        <div class="quiet-list">
-          <!-- Channel 1: YouTube Tech -->
-          <a href="https://www.youtube.com/@mindovermachine-bd" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">Mind Over Machine — Tech &amp; Engineering</span>
-                <span class="channel-desc">Agentic AI coding, Flutter mobile development, and computational methods.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">@mindovermachine-bd &rarr;</span>
-          </a>
-
-          <!-- Channel 2: YouTube Economics -->
-          <a href="https://www.youtube.com/@ibrahimhasan8922" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">Economics &amp; Analytical Video Essays</span>
-                <span class="channel-desc">Analytical video essays on macroeconomic policy, Nobel paradigms, and health economics.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">@ibrahimhasan8922 &rarr;</span>
-          </a>
-
-          <!-- Channel 3: ResearchGate -->
-          <a href="https://www.researchgate.net/profile/Ibrahim-Hasan-13?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.072.565-.563.377-.97.936-1.213 1.68-.101.313-.16.643-.18.99-.02.348-.03.71-.03 1.086v1.365h-2.185v2.855h2.185v8.57c0 1.25.32 2.213.96 2.89.64.676 1.58 1.014 2.82 1.014.86 0 1.64-.135 2.34-.405v-2.79c-.48.195-.98.293-1.5.293-.56 0-.98-.145-1.26-.435-.28-.29-.42-.775-.42-1.455v-8.683h3.18v-2.855h-3.18v-.93c0-.58.12-.99.36-1.23.24-.24.62-.36 1.14-.36.56 0 1.12.11 1.68.33v-2.82c-.64-.26-1.34-.39-2.1-.39zM5.5 4C3.015 4 1 6.015 1 8.5v7C1 17.985 3.015 20 5.5 20h3.5a1 1 0 001-1v-4.5a1 1 0 00-1-1H6.5v-1H9a1 1 0 001-1V8.5C10 6.015 7.985 4 5.5 4zm0 2.5c1.38 0 2.5 1.12 2.5 2.5v1H5.5c-1.38 0-2.5-1.12-2.5-2.5S4.12 6.5 5.5 6.5z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">ResearchGate Scientific Profile</span>
-                <span class="channel-desc">Repository hosting working papers, policy briefs, and conference abstracts.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">Ibrahim-Hasan-13 &rarr;</span>
-          </a>
-
-          <!-- Channel 4: LinkedIn -->
-          <a href="https://www.linkedin.com/in/ibrahim-hasan-1492a7169/" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">LinkedIn Professional Network</span>
-                <span class="channel-desc">Career updates, institutional research milestones, and engineering collaborations.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">ibrahim-hasan &rarr;</span>
-          </a>
-
-          <!-- Channel 5: Facebook -->
-          <a href="https://www.facebook.com/ibrahimhasan.012/" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">Policy Commentary &amp; Discourse</span>
-                <span class="channel-desc">Discussions on national healthcare policy, governance, and public health.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">@ibrahimhasan.012 &rarr;</span>
-          </a>
-
-          <!-- Channel 6: Instagram -->
-          <a href="https://www.instagram.com/ibrahimhasan012/" target="_blank" rel="noopener noreferrer" class="channel-row">
-            <div class="channel-info">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-              </div>
-              <div class="channel-text-wrap">
-                <span class="channel-name">Fieldwork &amp; Academic Life</span>
-                <span class="channel-desc">Visual dispatches from national survey field operations and graduate life in Dhaka.</span>
-              </div>
-            </div>
-            <span class="channel-link-arrow">@ibrahimhasan012 &rarr;</span>
-          </a>
+        <div class="work-index-heading"><h2>Other work</h2><span>Select a project to see details</span></div>
+        <div class="work-index" id="work-index">
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">02</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5h6l1.2 3.2 3.3 2.1-.6 4.2-2.7 2.5-.6 4H8.4l-.6-4-2.7-2.5-.6-4.2 3.3-2.1z"/><path d="M9 10h.01M15 10h.01M9.5 13.5c1.5 1.3 3.5 1.3 5 0"/></svg></span><span class="work-name">Child undernutrition · BDHS 2022</span><span class="work-kind">THESIS / DATA</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>Reproducible analysis of 8,500+ child records from the 2022 Bangladesh Demographic and Health Survey. Anthropometric Z-scores were validated against official benchmarks.</p><div class="work-reveal-foot"><span>R · Survey microdata · HAZ / WAZ / WHZ</span><span class="work-proof">8,500+ records</span></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">03</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5 5 4h14l2 4.5v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 8.5h18M8 12v3m4-3v3m4-3v3"/></svg></span><span class="work-name">Findly BD</span><span class="work-kind">DEAL DISCOVERY</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>A lightweight price and deal finder for Bangladesh’s tech retailers, with scheduled catalog refreshes and product tracking.</p><div class="work-reveal-foot"><span>Static site · JavaScript · GitHub Actions</span><a href="https://github.com/ibrahimhasan0012/findly" target="_blank" rel="noopener noreferrer">Repository ↗</a></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">04</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h10M7 13h6M7 17h3"/><path d="m16 15 2 2 3-4"/></svg></span><span class="work-name">TechPulse</span><span class="work-kind">DIGITAL PUBLICATION</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>A modern technology news and insights website, built with Vite and React.</p><div class="work-reveal-foot"><span>React · Vite</span><a href="https://github.com/ibrahimhasan0012/TechPulse" target="_blank" rel="noopener noreferrer">Repository ↗</a></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">05</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 9v11M7 6.5h.01M10 6.5h.01"/></svg></span><span class="work-name">Kori</span><span class="work-kind">WEB PRODUCT</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>A web project with a live product and source repository.</p><div class="work-reveal-foot"><span>Product interface</span><span><a href="https://kori-azure.vercel.app" target="_blank" rel="noopener noreferrer">Live site ↗</a> <a href="https://github.com/ibrahimhasan0012/Kori" target="_blank" rel="noopener noreferrer">Code ↗</a></span></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">06</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg></span><span class="work-name">Bangla PDF Engine</span><span class="work-kind">DOCUMENT AI</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>High-fidelity Bengali PDF OCR and text extraction built for bilingual document processing, tabular parsing, and scanned text extraction, with agentic coding toolchains.</p><div class="work-reveal-foot"><span>Python · OCR · PDF extraction · Agent skills</span><a href="https://github.com/ibrahimhasan0012/bangla-pdf-processor" target="_blank" rel="noopener noreferrer">Repository ↗</a></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">07</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C9.7 4.7 6.8 4.2 3.5 5v14c3.3-.8 6.2-.3 8.5 1.5M12 6.5c2.3-1.8 5.2-2.3 8.5-1.5v14c-3.3-.8-6.2-.3-8.5 1.5M12 6.5v14"/></svg></span><span class="work-name">Bangladesh e-paper readers</span><span class="work-kind">FLUTTER / MOBILE</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>Runner is a Flutter 3.x reader for Android and iOS, with high-resolution raster rendering, publication switching, offline caching, and clean architecture. Pataghar is a reader for Android, iOS, and Web with responsive layout, touch zoom, publication selection, and automated edition archiving.</p>
+              <figure class="project-preview">
+                <img src="assets/bd_epaper_preview.png" width="1600" height="920" loading="lazy" decoding="async" alt="Runner's newspaper library and broadsheet reader shown side by side">
+                <figcaption>Runner e-paper reader preview</figcaption>
+              </figure>
+              <div class="work-reveal-foot"><span>One reading problem · two builds · Flutter / Dart</span><span><a href="https://github.com/ibrahimhasan0012/runner-epaper" target="_blank" rel="noopener noreferrer">Runner ↗</a> <a href="https://github.com/ibrahimhasan0012/pataghar" target="_blank" rel="noopener noreferrer">Pataghar ↗</a></span></div></div></div>
+          </details>
+          <details class="work-reveal" data-work-reveal>
+            <summary><span class="work-number">08</span><span class="work-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17"/><path d="m7 15 4-4 3 2 5-7"/><circle cx="19" cy="6" r="1.5"/></svg></span><span class="work-name">Parallel simulated annealing</span><span class="work-kind">HPC / CUDA</span><span class="work-plus" aria-hidden="true"></span></summary>
+            <div class="work-reveal-panel"><div class="work-reveal-inner"><p>Parallel optimization algorithms in C, OpenMP, and CUDA for combinatorial search, asynchronous cooling schedules, and multi-core GPU speedup benchmarks.</p><div class="work-reveal-foot"><span>C · OpenMP · CUDA</span><span>NSU</span></div></div></div>
+          </details>
         </div>
       </section>
 
       <!-- Contact & Footer -->
-      <footer class="contact-section" id="contact">
-        <div class="contact-header">
-          <h2 class="section-label" style="margin-bottom: 8px;">Let's Connect.</h2>
-          <p class="item-desc">
-            For quantitative health policy evaluations, demographic microdata modeling, scientific computing, or open-source software collaboration.
-          </p>
-        </div>
-
-        <div class="contact-email-row">
-          <a href="mailto:ibrahimhasanzafar@gmail.com" class="email-address">ibrahimhasanzafar@gmail.com</a>
-          <button class="copy-btn copy-email-btn" data-email="ibrahimhasanzafar@gmail.com">
-            <span class="copy-btn-icon-wrap">
-              <svg class="icon-copy" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <svg class="icon-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--accent-emerald)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </span>
-            <span class="copy-btn-text">Copy Email</span>
-          </button>
-        </div>
-
+      <footer class="site-footer">
         <div class="footer-meta">
-          <span>© <span id="current-year">2026</span> Ibrahim Hasan • Dhaka, Bangladesh</span>
-          <span>Health Economics &amp; Software Systems</span>
+          <span>© <span id="current-year">2026</span> Ibrahim Hasan · Dhaka, Bangladesh</span>
+          <span>Health economics · Computational research · Public-interest software</span>
         </div>
+        <a class="resume-download" href="assets/Ibrahim_Hasan_CV.pdf" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/></svg>
+          <span>Download résumé</span>
+        </a>
       </footer>
     </main>
   </div>
@@ -491,6 +238,6 @@
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
   <!-- App Script -->
-  <script src="js/main.js?v=2.5"></script>
+  <script src="js/main.js?v=6.2"></script>
 </body>
 </html>

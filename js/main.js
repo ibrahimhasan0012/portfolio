@@ -7,20 +7,236 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initMobileMenu();
   initProjectFilters();
+  initProjectReveals();
   initModals();
   initClipboardButtons();
   initScrollSpy();
+  initNextPageDock();
   updateCurrentYear();
   initAmbientSpotlight();
-  initMagneticHoverPills();
+  initScrollReveals();
+  initPointerLighting();
+  initNavIndicator();
+  initCursorHalo();
 });
+
+/* Keep the next-page action within reach after its hero link scrolls away. */
+function initNextPageDock() {
+  const source = document.querySelector('[data-next-page]');
+  if (!source) return;
+
+  const dock = document.createElement('div');
+  dock.className = 'page-step-dock';
+  dock.setAttribute('aria-hidden', 'true');
+  document.body.append(dock);
+
+  let placeholder = null;
+  let isDocked = false;
+  let observer = null;
+
+  const dockSource = () => {
+    if (isDocked || !source.parentElement) return;
+    const rect = source.getBoundingClientRect();
+    const style = getComputedStyle(source);
+    placeholder = document.createElement('span');
+    placeholder.className = 'page-step-placeholder';
+    Object.assign(placeholder.style, {
+      display: 'block',
+      width: `${rect.width}px`,
+      height: `${rect.height}px`,
+      marginTop: style.marginTop,
+      marginRight: style.marginRight,
+      marginBottom: style.marginBottom,
+      marginLeft: style.marginLeft,
+      gridColumn: style.gridColumn,
+      gridRow: style.gridRow,
+      justifySelf: style.justifySelf,
+      alignSelf: style.alignSelf,
+      visibility: 'hidden',
+      pointerEvents: 'none'
+    });
+    source.before(placeholder);
+    dock.append(source);
+    isDocked = true;
+    dock.setAttribute('aria-hidden', 'false');
+    dock.classList.add('is-visible');
+    observer?.unobserve(source);
+    observer?.observe(placeholder);
+  };
+
+  const restoreSource = () => {
+    if (!isDocked || !placeholder?.isConnected) return;
+    const oldPlaceholder = placeholder;
+    dock.classList.remove('is-visible');
+    dock.setAttribute('aria-hidden', 'true');
+    observer?.unobserve(oldPlaceholder);
+    oldPlaceholder.before(source);
+    oldPlaceholder.remove();
+    placeholder = null;
+    isDocked = false;
+    observer?.observe(source);
+  };
+
+  const setDockState = () => {
+    const target = isDocked ? placeholder : source;
+    if (!target) return;
+    const passedTop = target.getBoundingClientRect().bottom <= 0;
+    if (!isDocked && passedTop) dockSource();
+    else if (isDocked && !passedTop) restoreSource();
+  };
+
+  if ('IntersectionObserver' in window) {
+    observer = new IntersectionObserver(setDockState, { threshold: 0, rootMargin: '0px' });
+    observer.observe(source);
+    return;
+  }
+
+  const update = () => setDockState();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+}
+
+/* --- Gentle entrance motion that stays out of the way of reduced-motion users --- */
+function initScrollReveals() {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || !('IntersectionObserver' in window)) return;
+
+  const targets = document.querySelectorAll(
+    '.page-intro, .about-intro, .ssb-feature, .work-index-heading, .trajectory-item, .channel-row, .contact-section'
+  );
+  targets.forEach(item => item.classList.add('scroll-reveal'));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -32px 0px' });
+
+  targets.forEach(item => observer.observe(item));
+}
+
+/* --- Pointer-reactive color glow on desktop project artwork --- */
+function initPointerLighting() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) return;
+
+  document.querySelectorAll('.ssb-feature').forEach(card => {
+    let frame = 0;
+    card.addEventListener('pointermove', event => {
+      if (event.pointerType !== 'mouse') return;
+      if (frame) cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const bounds = card.getBoundingClientRect();
+        const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+        const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+        card.style.setProperty('--pointer-x', `${x}%`);
+        card.style.setProperty('--pointer-y', `${y}%`);
+      });
+    });
+    card.addEventListener('pointerleave', () => {
+      if (frame) cancelAnimationFrame(frame);
+      card.style.setProperty('--pointer-x', '90%');
+      card.style.setProperty('--pointer-y', '8%');
+    });
+  });
+}
+
+/* A single highlight follows focus or mouse hover, then returns to the current page. */
+function initNavIndicator() {
+  const nav = document.querySelector('.site-nav');
+  if (!nav) return;
+
+  const links = [...nav.querySelectorAll('.site-nav-link')];
+  const current = nav.querySelector('[aria-current="page"]');
+  if (!current || links.length !== 5) return;
+
+  const pointTo = link => nav.style.setProperty('--nav-slot', links.indexOf(link));
+  const restore = () => pointTo(nav.querySelector('.site-nav-link:focus-visible') || current);
+  restore();
+  nav.classList.add('has-nav-indicator');
+
+  nav.addEventListener('pointerover', event => {
+    const link = event.target.closest('.site-nav-link');
+    if (event.pointerType === 'mouse' && link) pointTo(link);
+  });
+  nav.addEventListener('pointerleave', restore);
+  nav.addEventListener('focusin', restore);
+  nav.addEventListener('focusout', () => queueMicrotask(restore));
+}
+
+/* Keep the native cursor and draw a halo that responds to clickable targets. */
+function initCursorHalo() {
+  const motion = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+  const halo = document.createElement('span');
+  halo.className = 'cursor-halo';
+  halo.setAttribute('aria-hidden', 'true');
+  document.body.append(halo);
+
+  let frame = 0;
+  let pointer;
+  const hide = () => {
+    cancelAnimationFrame(frame);
+    frame = 0;
+    halo.classList.remove('is-visible');
+  };
+
+  document.addEventListener('pointermove', event => {
+    if (event.pointerType !== 'mouse' || !motion.matches) return hide();
+    if (event.target.closest('input, textarea, [contenteditable]')) return hide();
+
+    pointer = event;
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      const target = pointer.target;
+      halo.style.translate = `${pointer.clientX}px ${pointer.clientY}px`;
+      halo.classList.toggle('is-interactive', Boolean(target?.closest('a[href], button:enabled, summary, [role="button"]')));
+      halo.classList.add('is-visible');
+      frame = 0;
+    });
+  }, { passive: true });
+
+  document.documentElement.addEventListener('pointerleave', hide);
+  window.addEventListener('blur', hide);
+  motion.addEventListener('change', hide);
+}
+
+/* --- Click or keyboard activation reveals one project at a time --- */
+function initProjectReveals() {
+  const entries = [...document.querySelectorAll('[data-work-reveal]')];
+
+  const setExpanded = (entry, expanded) => {
+    if (expanded) {
+      entries.forEach(other => {
+        if (other !== entry) {
+          other.open = false;
+          other.querySelector('summary')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+    entry.open = expanded;
+    entry.querySelector('summary')?.setAttribute('aria-expanded', String(expanded));
+  };
+
+  entries.forEach(entry => {
+    const trigger = entry.querySelector('summary');
+    if (!trigger) return;
+    trigger.setAttribute('aria-expanded', 'false');
+
+    trigger.addEventListener('click', event => {
+      event.preventDefault();
+      setExpanded(entry, !entry.open);
+    });
+  });
+}
 
 /* --- 1. Theme Management (Dark / Light) --- */
 function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const htmlRoot = document.documentElement;
 
-  const savedTheme = localStorage.getItem('ih_theme') || 'dark';
+  const savedTheme = localStorage.getItem('ih_theme') || 'light';
   htmlRoot.setAttribute('data-theme', savedTheme);
 
   if (themeToggleBtn) {
@@ -89,72 +305,22 @@ function initProjectFilters() {
 /* --- 4. Interactive Project & Research Modals with Publication Diagrams --- */
 const modalData = {
   'modal-ssb': {
-    title: 'Sugar-Sweetened Beverage (SSB) Taxation & Policy Initiative',
-    tag: 'Flagship Health Policy Research • ARK Foundation',
+    title: 'Sugar-Sweetened Beverages: Research & Policy',
+    tag: 'Flagship research initiative • ARK Foundation',
     content: `
-      <p class="modal-body-text">
-        At <strong>ARK Foundation</strong> (serving as Research Assistant from Oct 2025 to Present), I conduct empirical research evaluating fiscal taxation, front-of-pack labeling (FoPL), and consumer behavioral demand across sugar-sweetened beverages in Bangladesh.
-      </p>
-
-      <!-- Diagram Design: Empirical & Policy Pipeline -->
-      <div class="methodology-diagram-wrap">
-        <div class="diagram-header">
-          <span class="diagram-header-tag">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            Research &amp; Policy Pipeline
-          </span>
-          <span>ARK Foundation</span>
-        </div>
-        <svg class="diagram-svg" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <marker id="marker-arrow-ssb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(148, 163, 184, 0.6)"/>
-            </marker>
-          </defs>
-          <!-- Stage 1 Inputs -->
-          <rect x="10" y="20" width="145" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
-          <text x="22" y="38" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / FIELD SURVEY</text>
-          <text x="22" y="54" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Household Survey</text>
-          <text x="22" y="68" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">KoboToolbox • 8 Divisions</text>
-
-          <rect x="10" y="100" width="145" height="60" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
-          <text x="22" y="118" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">01 / PACK AUDIT</text>
-          <text x="22" y="134" font-family="var(--font-sans)" font-size="11" fill="var(--ink-primary)" font-weight="600">Nutritional Audit</text>
-          <text x="22" y="148" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">FoPL • Sugar Compliance</text>
-
-          <!-- Connectors 1 -> 2 -->
-          <path d="M 155 50 L 195 75" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
-          <path d="M 155 130 L 195 105" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
-
-          <!-- Stage 2 Analysis -->
-          <rect x="200" y="45" width="150" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--border-subtle)" vector-effect="non-scaling-stroke"/>
-          <text x="214" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--accent-emerald)" font-weight="600">02 / ANALYSIS</text>
-          <text x="214" y="84" font-family="var(--font-sans)" font-size="11.5" fill="var(--ink-primary)" font-weight="600">Econometric Modeling</text>
-          <text x="214" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Demand Elasticities</text>
-          <text x="214" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">Food-EPI Benchmark</text>
-
-          <!-- Connectors 2 -> 3 -->
-          <path d="M 350 90 L 385 90" stroke="rgba(148, 163, 184, 0.45)" stroke-width="1.5" marker-end="url(#marker-arrow-ssb)"/>
-
-          <!-- Stage 3 Output -->
-          <rect x="390" y="45" width="120" height="90" rx="6" fill="var(--bg-surface-elevated)" stroke="var(--accent-blue)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
-          <text x="404" y="66" font-family="var(--font-mono)" font-size="9" fill="var(--accent-blue)" font-weight="600">03 / POLICY IMPACT</text>
-          <text x="404" y="84" font-family="var(--font-sans)" font-size="11.5" fill="var(--ink-primary)" font-weight="600">Policy Briefs</text>
-          <text x="404" y="100" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">NBR / MoF Briefing</text>
-          <text x="404" y="116" font-family="var(--font-mono)" font-size="8.5" fill="var(--ink-muted)">2 Working Papers</text>
-        </svg>
+      <p class="modal-body-text">The sugar-sweetened beverages project brings together three connected strands of work on food policy and consumer evidence in Bangladesh.</p>
+      <div class="ssb-stream-grid">
+        <article class="ssb-stream"><span>01 / POLICY REVIEW</span><h4>Food-EPI review</h4><p>Reviewing food-policy implementation against international Food-EPI benchmarks. The review paper is in progress.</p></article>
+        <article class="ssb-stream"><span>02 / PACK ANALYSIS</span><h4>Nutritional pack analysis</h4><p>Assessing product packaging, nutrition declarations, and compliance relevant to sugar-sweetened beverages. The analysis paper is in progress.</p></article>
+        <article class="ssb-stream"><span>03 / HOUSEHOLD SURVEY</span><h4>Consumer &amp; household evidence</h4><p>Conducting a digital household survey to understand beverage purchasing and demand, alongside consumer research on front-of-pack labelling.</p></article>
       </div>
-
-      <h4 class="modal-section-title">The Three Core Workstreams</h4>
-      <ul class="track-list" style="margin-bottom: 20px;">
-        <li><strong>1. National Household Survey:</strong> Designing, auditing, and executing structured digital survey questionnaires via KoboToolbox to estimate consumer purchasing habits and household demand elasticities.</li>
-        <li><strong>2. Food-EPI Policy Review Paper:</strong> Evaluating government implementation benchmarks against international Food-EPI standards. <em>(Full paper currently in progress)</em>.</li>
-        <li><strong>3. Nutritional Pack Analysis Paper:</strong> Comprehensive laboratory and packaging compliance evaluation assessing nutrient declaration fidelity and health risk scores. <em>(Full paper currently in progress)</em>.</li>
+      <h4 class="modal-section-title">Read on ResearchGate</h4>
+      <ul class="modal-bullets research-publications">
+        <li><a href="https://www.researchgate.net/publication/417086923_Designed_to_Appeal_Child-Focused_Packaging_of_Sugary_Beverages_in_Bangladesh" target="_blank" rel="noopener noreferrer">Designed to Appeal: Child-Focused Packaging of Sugary Beverages in Bangladesh</a></li>
+        <li><a href="https://www.researchgate.net/publication/414490438_Beyond_the_Barcode_Strengthening_digital_verification_of_sugar-sweetened_beverages_in_Bangladesh" target="_blank" rel="noopener noreferrer">Beyond the Barcode: Strengthening digital verification of sugar-sweetened beverages in Bangladesh</a></li>
       </ul>
-      <h4 class="modal-section-title">Publications &amp; Policy Impact</h4>
-      <p class="modal-body-text">
-        One national policy brief has been successfully published, with a second policy brief in active preparation, directly informing legislative stakeholders on tiered excise taxation.
-      </p>
+      <h4 class="modal-section-title">Policy engagement</h4>
+      <p class="modal-body-text">One national policy brief has been published, with a second in preparation to support policy discussion on tiered excise taxation.</p>
     `
   },
   'modal-bdepaper': {
@@ -579,48 +745,3 @@ function initAmbientSpotlight() {
     }
   }, { passive: true });
 }
-
-/* --- 9. Magnetic Sliding Hover Pill (Emil Kowalski Physics) --- */
-function initMagneticHoverPills() {
-  if (window.matchMedia('(pointer: coarse)').matches) return;
-
-  const listContainers = document.querySelectorAll('.quiet-list, .trajectory-list');
-
-  listContainers.forEach(container => {
-    container.classList.add('has-magnetic-pill');
-
-    let pill = container.querySelector('.sliding-hover-pill');
-    if (!pill) {
-      pill = document.createElement('div');
-      pill.className = 'sliding-hover-pill';
-      pill.setAttribute('aria-hidden', 'true');
-      container.insertBefore(pill, container.firstChild);
-    }
-
-    const interactiveItems = container.querySelectorAll('.quiet-item, .trajectory-item, .channel-row');
-
-    interactiveItems.forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        if (item.offsetParent === null) return;
-
-        const cRect = container.getBoundingClientRect();
-        const iRect = item.getBoundingClientRect();
-
-        const x = iRect.left - cRect.left;
-        const y = iRect.top - cRect.top;
-        const w = iRect.width;
-        const h = iRect.height;
-
-        pill.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-        pill.style.width = `${w}px`;
-        pill.style.height = `${h}px`;
-        pill.style.opacity = '1';
-      });
-    });
-
-    container.addEventListener('mouseleave', () => {
-      pill.style.opacity = '0';
-    });
-  });
-}
-
